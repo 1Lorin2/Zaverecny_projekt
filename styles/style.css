@@ -158,7 +158,6 @@ body {
   background: #ffcf21; /* Slightly brighter yellow on hover */
   transform: translateY(-2px); /* Lifts the button up slightly */
   box-shadow: 0 6px 0 #c29d14; /* Increases the shadow as it lifts */
-  transition: all 0.2s ease-in-out;
 }
 
 .read-btn:active {
