@@ -1,35 +1,395 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kickoff</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-     <aside class="sidebar">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
       <div class="sidebar-logo">
-        <div class="logo-icon"><img src="images/football.png" alt=""></div>
-        <div class="logo-text">KICKOFF</div>
+        <a href="index.html" class="logo-link">
+          <div class="logo-icon"><img src="images/football.png" alt="" /></div>
+          <div class="logo-text">KICKOFF</div>
+        </a>
       </div>
 
       <nav class="sidebar-nav">
-        <a class="nav-item" href="index.html"><img class="nav-icon" src="images/newspaper-folded.png" alt="">News</a>
-        <a class="nav-item active" href="leagues.html"><img class="nav-icon" src="images/trophy.png" alt="">Leagues</a>
-        <a class="nav-item" href="teams.html"><img class="nav-icon" src="images/tshirt.png" alt="">Teams</a>
-        <a class="nav-item" href="players.html"><img class="nav-icon" src="images/group.png" alt="">Players</a>
-        <a class="nav-item" href="matches.html"><img class="nav-icon" src="images/football-field.png" alt="">Matches</a>
-        <a class="nav-item" href="standings.html"><img class="nav-icon" src="images/podium.png" alt="">Standings</a>
+        <a class="nav-item" href="index.html"
+          ><img
+            class="nav-icon"
+            src="images/newspaper-folded.png"
+            alt=""
+          />News</a
+        >
+        <a class="nav-item active" href="leagues.html"
+          ><img class="nav-icon" src="images/trophy.png" alt="" />Leagues</a
+        >
+        <a class="nav-item" href="teams.html"
+          ><img class="nav-icon" src="images/tshirt.png" alt="" />Teams</a
+        >
+        <a class="nav-item" href="players.html"
+          ><img class="nav-icon" src="images/group.png" alt="" />Players</a
+        >
+        <a class="nav-item" href="matches.html"
+          ><img
+            class="nav-icon"
+            src="images/football-field.png"
+            alt=""
+          />Matches</a
+        >
+        <a class="nav-item" href="standings.html"
+          ><img class="nav-icon" src="images/podium.png" alt="" />Standings</a
+        >
       </nav>
 
       <div class="sidebar-footer">
         <p>© Lorin Luca 2026</p>
       </div>
-
     </aside>
 
+    <main class="main-content">
+      <div class="content-header">
+        <h1>LEAGUES</h1>
+        <span class="date-display">SATURDAY, MAY 16, 2026</span>
+      </div>
 
-    
-</body>
+      <div class="leagues-hero">
+        <div class="hero-banner-content">
+          <span class="popular-badge">⭐ MOST POPULAR</span>
+
+          <div class="hero-league-title-row">
+            <div class="hero-logo-circle">
+              <img
+                src="images/prem-logo.svg"
+                alt="PL Logo"
+                class="hero-circle-img"
+              />
+            </div>
+            <h2>PREMIER LEAGUE</h2>
+          </div>
+
+          <p class="hero-league-desc">
+            The most-watched football league on the planet. 20 clubs battling
+            for the most coveted domestic title. Only 1 match week remaining —
+            it's all to play for.
+          </p>
+        </div>
+
+        <div class="hero-stats-display">
+          <div class="stat-box">
+            <span class="stat-num">20</span>
+            <span class="stat-label">CLUBS</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">37</span>
+            <span class="stat-label">MATCHWEEK</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">1,116</span>
+            <span class="stat-label">GOALS</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-subtitle">DOMESTIC LEAGUES</h2>
+      <div class="leagues-dashboard-grid">
+        <div class="dashboard-card">
+          <div class="card-header-block pl-theme">
+            <div class="header-icon-circle"><img src="images/prem-logo.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>PREMIER LEAGUE</h3>
+              <p>ENGLAND</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>20</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>37</strong><span>MATCHWEEK</span>
+            </div>
+            <div class="mini-stat"><strong>1116</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🏆 TABLE LEADER</span>
+              <span class="leader-name">Arsenal FC</span>
+            </div>
+            <span class="leader-points">85 PTS</span>
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block laliga-theme">
+            <div class="header-icon-circle"><img src="images/laliga.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>LA LIGA</h3>
+              <p>SPAIN</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>20</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>36</strong><span>MATCHWEEK</span>
+            </div>
+            <div class="mini-stat"><strong>987</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🏆 TABLE LEADER</span>
+              <span class="leader-name">Real Madrid</span>
+            </div>
+            <span class="leader-points">82 PTS</span>
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block bundes-theme">
+            <div class="header-icon-circle"><img src="images/bundes-logo.png" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>BUNDESLIGA</h3>
+              <p>GERMANY</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>18</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>34</strong><span>MATCHWEEK</span>
+            </div>
+            <div class="mini-stat"><strong>921</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🏆 TABLE LEADER</span>
+              <span class="leader-name">Bayer Leverkusen</span>
+            </div>
+            <span class="leader-points">79 PTS</span>
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block seriea-theme">
+            <div class="header-icon-circle"><img src="images/serieA.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>SERIE A</h3>
+              <p>ITALY</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>20</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>35</strong><span>MATCHWEEK</span>
+            </div>
+            <div class="mini-stat"><strong>876</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🏆 TABLE LEADER</span>
+              <span class="leader-name">Inter Milan</span>
+            </div>
+            <span class="leader-points">77 PTS</span>
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block ligue1-theme">
+            <div class="header-icon-circle"><img src="images/ligueone.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>LIGUE 1</h3>
+              <p>FRANCE</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>18</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>34</strong><span>MATCHWEEK</span>
+            </div>
+            <div class="mini-stat"><strong>834</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🏆 TABLE LEADER</span>
+              <span class="leader-name">Paris Saint-Germain</span>
+            </div>
+            <span class="leader-points">74 PTS</span>
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block saudi-theme">
+            <div class="header-icon-circle"><img src="images/SPL.webp" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>SAUDI PRO LEAGUE</h3>
+              <p>SAUDI ARABIA</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>18</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>30</strong><span>MATCHWEEK</span>
+            </div>
+            <div class="mini-stat"><strong>712</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🏆 TABLE LEADER</span>
+              <span class="leader-name">Al Hilal</span>
+            </div>
+            <span class="leader-points">67 PTS</span>
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block mls-theme">
+            <div class="header-icon-circle"><img src="images/MLS.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>MLS</h3>
+              <p>USA / CANADA</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>29</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>18</strong><span>MATCHWEEK</span>
+            </div>
+            <div class="mini-stat"><strong>498</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🥇 EAST LEADER</span>
+              <span class="leader-name">Inter Miami CF</span>
+            </div>
+            <span class="leader-points">36 PTS</span>
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+      </div>
+
+      <h2 class="section-subtitle" style="margin-top: 40px">
+        INTERNATIONAL LEAGUES
+      </h2>
+      <div class="leagues-dashboard-grid">
+        <div class="dashboard-card">
+          <div class="card-header-block ucl-theme">
+            <div class="header-icon-circle"><img src="images/UCL.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>UEFA CHAMPIONS LEAGUE</h3>
+              <p>EUROPE • CLUB</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>36</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>FINAL</strong><span>STAGE</span>
+            </div>
+            <div class="mini-stat"><strong>441</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🎬 FINAL • MUNICH</span>
+              <span class="leader-name">Real Madrid vs PSG</span>
+            </div>
+            <span
+              class="leader-points"
+              style="font-size: 14px; text-align: right; line-height: 1.2"
+              >MAY 31<br /><span
+                style="
+                  font-size: 9px;
+                  color: #888;
+                  font-family: 'DM Sans';
+                  font-weight: 700;
+                "
+                >MATCHDAY</span
+              ></span
+            >
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block uel-theme">
+            <div class="header-icon-circle"><img src="images/europa-league.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>UEFA EUROPA LEAGUE</h3>
+              <p>EUROPE • CLUB</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>36</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>FINAL</strong><span>STAGE</span>
+            </div>
+            <div class="mini-stat"><strong>398</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🎬 FINAL • BILBAO</span>
+              <span class="leader-name">Man United vs AS Roma</span>
+            </div>
+            <span
+              class="leader-points"
+              style="font-size: 14px; text-align: right; line-height: 1.2"
+              >MAY 20<br /><span
+                style="
+                  font-size: 9px;
+                  color: #888;
+                  font-family: 'DM Sans';
+                  font-weight: 700;
+                "
+                >MATCHDAY</span
+              ></span
+            >
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="card-header-block uecl-theme">
+            <div class="header-icon-circle"><img src="images/conference.svg" alt="PL Logo" class="card-header-img"></div>
+            <div class="header-text-block">
+              <h3>UEFA CONFERENCE LEAGUE</h3>
+              <p>EUROPE • CLUB</p>
+            </div>
+          </div>
+          <div class="card-stats-row">
+            <div class="mini-stat"><strong>36</strong><span>CLUBS</span></div>
+            <div class="mini-stat">
+              <strong>FINAL</strong><span>STAGE</span>
+            </div>
+            <div class="mini-stat"><strong>362</strong><span>GOALS</span></div>
+          </div>
+          <div class="card-leader-row">
+            <div class="leader-info">
+              <span class="leader-label">🎬 FINAL • WROCŁAW</span>
+              <span class="leader-name">Chelsea vs Fiorentina</span>
+            </div>
+            <span
+              class="leader-points"
+              style="font-size: 14px; text-align: right; line-height: 1.2"
+              >MAY 27<br /><span
+                style="
+                  font-size: 9px;
+                  color: #888;
+                  font-family: 'DM Sans';
+                  font-weight: 700;
+                "
+                >MATCHDAY</span
+              ></span
+            >
+          </div>
+          <button class="view-league-btn">VIEW LEAGUE &rarr;</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
