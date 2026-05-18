@@ -38,6 +38,30 @@ body {
   color: #ffffff;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none; /* Removes any default underlines */
+  width: 100%;
+}
+
+/* Optional: Gives a subtle hover effect so the user knows it's a link */
+.logo-link:hover .logo-text {
+  color: #f0c419; /* Makes the text turn yellow on hover */
+  transition: color 0.2s ease;
+}
+
+.logo-link:hover .logo-icon img {
+  transform: rotate(15deg); /* Slightly spins the football icon for fun */
+  transition: transform 0.2s ease;
+}
+
+/* Smooth reset when mouse leaves */
+.logo-text, .logo-icon img {
+  transition: all 0.2s ease;
+}
+
 .sidebar-nav {
   flex: 1;
   padding: 14px 12px;
@@ -91,6 +115,7 @@ body {
   margin-left: 220px;
   padding: 40px;
   flex-grow: 1;
+  animation: fadeIn 0.4s ease-out forwards;
 }
 
 .content-header {
@@ -147,7 +172,7 @@ body {
   cursor: pointer;
   border-radius: 4px; /* Slight rounding looks more modern than sharp corners */
   margin-top: 15px;
-  
+
   /* The "Kickoff" Look */
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
@@ -168,20 +193,28 @@ body {
 .news-flex-container {
   display: flex;
   flex-direction: row; /* Horizontal layout */
-  flex-wrap: wrap;     /* Allows cards to drop to next line if screen is small */
-  gap: 20px;           /* Spacing between cards */
+  flex-wrap: wrap; /* Allows cards to drop to next line if screen is small */
+  gap: 20px; /* Spacing between cards */
 }
 
 .news-card {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+
+  /* CHANGE THIS: 0 means don't grow, 1 means shrink, and the percentage sets the exact size */
+  flex: 0 1 calc(33.333% - 14px);
+  max-width: calc(33.333% - 14px);
+}
+
+.news-card:hover {
+  /* Simple scale: 1.03 means make it 3% bigger when the mouse hovers */
+  transform: scale(1.03);
   
-  /* Flex settings: 1 grows, 1 shrinks, 300px is the base size */
-  flex: 1 1 300px; 
-  max-width: calc(33.333% - 14px); /* Keeps exactly 3 cards per row */
+  /* Changes cursor to a hand pointer */
+  cursor: pointer; 
 }
 
 /* Fallback for smaller screens */
@@ -216,9 +249,9 @@ body {
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   /* CHANGE THIS to adjust what part of the photo we see */
-  object-position: center; 
+  object-position: center;
 }
 
 /* Add a dark gradient so the white text is readable on the image */
@@ -229,7 +262,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .card-overlay-content {
@@ -238,4 +271,41 @@ body {
   left: 15px;
   z-index: 2; /* Keeps text above the gradient */
   color: white;
+}
+
+.ronaldo-pos {
+  object-position: center 10%; /* Shifts the focus up so we see his face */
+}
+
+.alonso-pos {
+  /* Keeps the focus on his face/upper torso depending on the landscape photo */
+  object-position: center 15%; 
+}
+
+/* Centers Ronaldo looking disappointed on the pitch */
+.ronaldo-acl-pos {
+  object-position: center 15%;
+}
+
+/* Captures the emotional wave or applause from Lewandowski */
+.lewa-pos {
+  object-position: center 25%;
+}
+
+.trophy-pos{
+  object-position: center 15%;
+}
+
+
+
+/* Make sure this is sitting at the bottom of your CSS file */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px); /* Subtle lift up on load */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
