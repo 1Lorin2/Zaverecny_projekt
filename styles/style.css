@@ -665,7 +665,7 @@ body {
     padding: 30px; /* Slightly tighter padding */
   }
   .hero-card h2 {
-    font-size: 38px; /* Scales down the title so it doesn't wrap into too many lines */
+    font-size: 28px; /* Scales down the title so it doesn't wrap into too many lines */
     margin: 8px 0;
   }
   .hero-card p {
