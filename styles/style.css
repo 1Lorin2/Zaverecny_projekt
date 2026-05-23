@@ -1,5 +1,10 @@
-body {
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: 'DM Sans', sans-serif;
   background-color: #f4f5f0;
   color: #1a1f1a;
@@ -17,6 +22,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
+  border-right: 1px solid #4b4b4a;
 }
 
 .logo-icon > img {
@@ -105,15 +111,32 @@ body {
   filter: brightness(0) invert(0);
 }
 
-.sidebar-footer {
-  padding: 16px 20px;
-  font-size: 14px;
-  color: #555c55;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+.content-wrapper {
+  margin-left: 220px; /* Protects your layout from the 220px sidebar */
+  min-height: 100vh;
+  flex-grow: 1;
+  /* Grid Setup */
+  display: grid;
+  grid-template-rows: 1fr auto; /* Content fills the top space, footer sits naturally below it */
+}
+
+.main-footer {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #1a1f1a; /* Your dark footer background color */
+  border-top: 1px solid #e0e2db;
+}
+
+.main-footer p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888e88;
+  letter-spacing: 0.5px;
 }
 
 .main-content {
-  margin-left: 220px;
+  width: 100%;
   padding: 40px;
   flex-grow: 1;
   animation: fadeIn 0.4s ease-out forwards;
@@ -149,9 +172,7 @@ body {
   height: 600px;
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/doue.webp') center/cover;
-
-  background-position: center 10%;
+    url('../images/doue.webp') center 10% /cover;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -192,10 +213,9 @@ body {
 }
 
 .news-flex-container {
-  display: flex;
-  flex-direction: row; /* Horizontal layout */
-  flex-wrap: wrap; /* Allows cards to drop to next line if screen is small */
-  gap: 20px; /* Spacing between cards */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .news-card {
@@ -204,10 +224,6 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-
-  /* CHANGE THIS: 0 means don't grow, 1 means shrink, and the percentage sets the exact size */
-  flex: 0 1 calc(33.333% - 14px);
-  max-width: calc(33.333% - 14px);
 }
 
 .news-card:hover {
@@ -218,12 +234,7 @@ body {
   cursor: pointer;
 }
 
-/* Fallback for smaller screens */
-@media (max-width: 1100px) {
-  .news-card {
-    max-width: calc(50% - 10px); /* 2 cards per row */
-  }
-}
+
 
 .card-img {
   height: 180px;
@@ -422,8 +433,8 @@ body {
 
 /* CARDS DASHBOARD GRID */
 .leagues-dashboard-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -432,10 +443,6 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-  flex: 0 1 calc(33.333% - 14px);
-  max-width: calc(33.333% - 14px);
-  display: flex;
-  flex-direction: column;
   transition: all 0.3s ease;
 }
 
@@ -615,6 +622,180 @@ body {
 .view-league-btn:hover {
   background: #f0c419;
   color: #1a1f1a;
+}
+
+/* --- LAPTOPS & SMALLER MONITORS --- */
+@media (max-width: 1400px) {
+  .news-flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  /* 1. Reset Content Wrapper Margin to align with the grid */
+  .content-wrapper {
+    margin-left: 80px;
+  }
+
+  /* 2. Adjust Sidebar layout */
+  .sidebar {
+    width: 80px;
+    align-items: center; /* Centers all direct children horizontally */
+  }
+  /* 3. Center the Logo Link Container */
+  .sidebar-logo {
+    width: 100%;
+    justify-content: center;
+  }
+  .logo-link {
+    justify-content: center;
+  }
+  /* Completely HIDE the logo text 'KICKOFF' */
+  .logo-text {
+    display: none;
+  }
+  /* Completely HIDE the menu text links (News, Leagues, etc.) */
+  .nav-item {
+    font-size: 0; /* Keep this to handle accessibility safely */
+  }
+
+  /* HERO CARD - BREAKPOINT 1 (LAPTOPS) */
+  .hero-card {
+    height: 450px; /* Bring the height down from 600px so it fits nicely on laptop screens */
+    background-position: center 15%; /* Keeps the main focus of the player perfectly framed */
+    padding: 30px; /* Slightly tighter padding */
+  }
+  .hero-card h2 {
+    font-size: 38px; /* Scales down the title so it doesn't wrap into too many lines */
+    margin: 8px 0;
+  }
+  .hero-card p {
+    font-size: 14px; /* Makes the description text a bit more compact */
+    max-width: 80%; /* Prevents text from stretching too wide */
+  }
+/* LEAGUES DASHBOARD - BREAKPOINT 1 (LAPTOPS) */
+  .leagues-dashboard-grid {
+    grid-template-columns: repeat(2, 1fr); /* Shifts league grids from 3 columns down to 2 columns */
+    gap: 20px;
+  }
+  .leagues-hero {
+    min-height: 300px; /* Brings height down slightly to match the smaller viewport scale */
+    padding: 30px;
+  }
+  .hero-league-title-row h2 {
+    font-size: 38px; /* Scales down the header font so it doesn't break across multiple lines */
+  }
+
+  .hero-logo-circle {
+    width: 80px;  /* Slightly scales down the white circle emblem wrapper */
+    height: 80px;
+  }
+
+  .stat-num {
+    font-size: 36px; /* Slightly tighter stats presentation */
+  }
+  
+  
+}
+
+/* --- TABLETS & SMALL SCREENS --- */
+@media (max-width: 992px) {
+  .news-flex-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  /* HERO CARD - BREAKPOINT 2 (TABLETS/MOBILES) */
+  .hero-card {
+    height: 380px; /* Safe, beautiful height for smaller viewports */
+    background-position: center 20%; /* Fine-tunes the photo focus */
+    padding: 24px;
+  }
+
+  .hero-card h2 {
+    font-size: 18px; /* Crisp font size that reads cleanly on any phone or tablet */
+    line-height: 1.1;
+  }
+
+  .hero-card p {
+    font-size: 13px;
+    max-width: 100%; /* Lets the text use the full card width on small screens */
+  }
+  
+  .read-btn {
+    padding: 8px 18px; /* Makes the action button slightly more compact */
+    font-size: 18px;
+  }
+  .card-overlay-content{
+    font-size: 12px;
+  }
+
+  /* LEAGUES DASHBOARD - BREAKPOINT 2 (TABLETS/MOBILES) */
+  .leagues-dashboard-grid {
+    grid-template-columns: 1fr; /* Stacks all league dashboard items into a single, clean column */
+    gap: 20px;
+  }
+
+  .leagues-hero {
+    flex-direction: column; /* Force-stacks the left title/description above the stats metrics block */
+    align-items: flex-start; /* Aligns content smoothly to the left side */
+    justify-content: flex-start;
+    gap: 30px; /* Creates clean breathing room between your text block and stats grid row */
+    padding: 24px;
+    background-position: center; /* Ensures background pitch imagery scales elegantly */
+  }
+
+  .popular-badge {
+    position: static; /* Removes absolute positioning so it acts as a normal block item */
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  .hero-league-title-row {
+    margin: 0 0 10px 0; /* Tightens text spacing around the header banner titles */
+  }
+
+  .hero-league-title-row h2 {
+    font-size: 32px; /* Crisp header title size for standard tablet displays */
+  }
+
+  .hero-logo-circle {
+    width: 65px; /* Compact logo layout size */
+    height: 65px;
+    padding: 5px;
+  }
+
+  .hero-league-desc {
+    max-width: 100%; /* Lets description wrap using all horizontal column space safely */
+    font-size: 13px;
+  }
+
+  .hero-stats-display {
+    width: 100%;
+    justify-content: space-between; /* Spreads the stats block elements across the bottom container area */
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Adds a sharp divider accent border */
+    padding-top: 20px;
+    gap: 10px;
+  }
+  
+  .stat-num {
+    font-size: 32px;
+  }
+  /* FIX CROWDED MOBILE DATE & HEADER */
+  .content-header {
+    flex-direction: column; /* Stacks LATEST NEWS above the date */
+    align-items: flex-start; /* Aligns them both to the left edge */
+    gap: 8px; /* Adds clean breathing room between them */
+    margin-bottom: 24px; /* Gives space before the hero card starts */
+  }
+  .content-header h1 {
+    font-size: 32px; /* Makes the main title punchy but compact */
+    line-height: 1;
+  }
+  .date-display {
+    font-size: 12px; /* Reduces the font size so it fits easily on any phone screen */
+    letter-spacing: 0.5px; /* Keeps it legible */
+    color: #888e88; /* Slightly softens the color to look less aggressive */
+  }
 }
 
 /* Make sure this is sitting at the bottom of your CSS file */
