@@ -1,33 +1,385 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kickoff</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-     <aside class="sidebar">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
       <div class="sidebar-logo">
-        <div class="logo-icon"><img src="images/football.png" alt=""></div>
+        <a href="index.html" class="logo-link">
+        <div class="logo-icon"><img src="images/football.png" alt="" /></div>
         <div class="logo-text">KICKOFF</div>
+      </a>
       </div>
 
       <nav class="sidebar-nav">
-        <a class="nav-item" href="index.html"><img class="nav-icon" src="images/newspaper-folded.png" alt="">News</a>
-        <a class="nav-item" href="leagues.html"><img class="nav-icon" src="images/trophy.png" alt="">Leagues</a>
-        <a class="nav-item active" href="teams.html"><img class="nav-icon" src="images/tshirt.png" alt="">Teams</a>
-        <a class="nav-item" href="players.html"><img class="nav-icon" src="images/group.png" alt="">Players</a>
-        <a class="nav-item" href="matches.html"><img class="nav-icon" src="images/football-field.png" alt="">Matches</a>
-        <a class="nav-item" href="standings.html"><img class="nav-icon" src="images/podium.png" alt="">Standings</a>
+        <a class="nav-item" href="index.html"
+          ><img
+            class="nav-icon"
+            src="images/newspaper-folded.png"
+            alt=""
+          />News</a
+        >
+        <a class="nav-item" href="leagues.html"
+          ><img class="nav-icon" src="images/trophy.png" alt="" />Leagues</a
+        >
+        <a class="nav-item active" href="teams.html"
+          ><img class="nav-icon" src="images/tshirt.png" alt="" />Teams</a
+        >
+        <a class="nav-item" href="players.html"
+          ><img class="nav-icon" src="images/group.png" alt="" />Players</a
+        >
+        <a class="nav-item" href="matches.html"
+          ><img
+            class="nav-icon"
+            src="images/football-field.png"
+            alt=""
+          />Matches</a
+        >
+        <a class="nav-item" href="standings.html"
+          ><img class="nav-icon" src="images/podium.png" alt="" />Standings</a
+        >
       </nav>
-
-      <div class="sidebar-footer">
-        <p>© Lorin Luca 2026</p>
-      </div>
-
     </aside>
+    <div class="content-wrapper">
+      <main class="main-content">
+        <div class="content-header">
+          <h1>Teams</h1>
+          <span class="date-display">SATURDAY, MAY 16, 2026</span>
+        </div>
 
-</body>
+        <div class="teams-hero">
+          <div class="hero-banner-content">
+            <span class="popular-badge">🔴 LIVE NOW</span>
+
+            <div class="hero-league-title-row">
+              <div class="hero-logo-circle">
+                <img
+                  src="images/liverpool-logo.webp"
+                  alt="LFC Logo"
+                  class="hero-circle-img"
+                />
+              </div>
+              <h2>LIVERPOOL FC</h2>
+            </div>
+
+            <p class="hero-league-desc">
+              The Reds are charging ahead at Anfield. With dominant tactical
+              press plays and an unstoppable frontline, Liverpool continues to
+              battle at the absolute summit of English and European football.
+            </p>
+            
+          </div>
+
+          <div class="hero-stats-display">
+            <div class="stat-item">
+              <span class="stat-num">2nd</span>
+              <span class="stat-label">PREM LEAGUE</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">82</span>
+              <span class="stat-label">GOALS </span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">24</span>
+              <span class="stat-label">WINS</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-subtitle">PREMIER LEAGUE</h2>
+        <div class="leagues-dashboard-grid">
+          <div class="dashboard-card">
+            <div class="card-header-block arsenal-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/arsenal.svg"
+                  alt="Arsenal"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>ARSENAL FC</h3>
+                <p>PREMIER LEAGUE • LONDON</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>1st</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>26</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>78</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">Bukayo Saka</span>
+              </div>
+              <span class="leader-points">18 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block lfc-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/liverpool-logo.webp"
+                  alt="Liverpool"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>LIVERPOOL FC</h3>
+                <p>PREMIER LEAGUE • LIVERPOOL</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>2nd</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>22</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>70</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">Mohammed Salah</span>
+              </div>
+              <span class="leader-points">25 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block chelsea-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/chelsea.svg"
+                  alt="Chelsea"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>Chelsea FC</h3>
+                <p>PREMIER LEAGUE • LONDON</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>3rd</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>18</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>60</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">Kai Havertz</span>
+              </div>
+              <span class="leader-points">21 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block manchester-city-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/manchester-city.svg"
+                  alt="Manchester City"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>MANCHESTER CITY </h3>
+                <p>PREMIER LEAGUE • MANCHESTER</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>4th</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>20</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>67</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">Erling Haaland</span>
+              </div>
+              <span class="leader-points">25 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+
+        </div>
+
+
+
+        <h2 class="section-subtitle" style="margin-top: 40px">
+          LA LIGA
+        </h2>
+        <div class="leagues-dashboard-grid">
+         <div class="dashboard-card">
+            <div class="card-header-block real-madrid-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/real-madrid.svg"
+                  alt="Real Madrid"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>REAL MADRID </h3>
+                <p>LA LIGA • MADRID</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>1st</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>28</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>80</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">Kylian Mbappe</span>
+              </div>
+              <span class="leader-points">33 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block barcelona-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/barcelona.svg"
+                  alt="Barcelona"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>BARCELONA </h3>
+                <p>LA LIGA • BARCELONA</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>2nd</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>25</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>75</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">Raphinha</span>
+              </div>
+              <span class="leader-points">21 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block atletico-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/atletico.svg"
+                  alt="Atletico Madrid"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>ATLETICO MADRID </h3>
+                <p>LA LIGA • MADRID</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>3rd</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>19</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>56</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">Antoine Griezmann</span>
+              </div>
+              <span class="leader-points">15 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block villarreal-theme">
+              <div class="header-icon-circle">
+                <img
+                  src="images/villarreal.svg"
+                  alt="Villarreal"
+                  class="card-header-img"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>VILLARREAL </h3>
+                <p>LA LIGA • VILLARREAL</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat">
+                <strong>4th</strong><span>POSITION</span>
+              </div>
+              <div class="mini-stat"><strong>14</strong><span>WINS</span></div>
+              <div class="mini-stat"><strong>34</strong><span>GOALS</span></div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">⭐ TOP SCORER</span>
+                <span class="leader-name">David Silva</span>
+              </div>
+              <span class="leader-points">13 </span>
+            </div>
+
+            <button class="view-league-btn">VIEW SQUAD &rarr;</button>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <p>© Lorin Luca 2026</p>
+      </footer>
+    </div>
+  </body>
 </html>

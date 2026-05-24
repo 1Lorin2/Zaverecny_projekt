@@ -338,6 +338,7 @@ body {
         left: 40px;
 }
 
+
 .hero-league-title-row {
   display: flex;
   align-items: center;
@@ -408,10 +409,8 @@ body {
   justify-content: center;
   flex-shrink: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
   /* ADD THIS: Clips the overlapping purple edges of the rectangular image */
   overflow: hidden;
-
   /* FIX 1: Add tiny padding so the image doesn't touch the absolute pixel edge of the circle */
   padding: 8px;
 }
@@ -429,6 +428,7 @@ body {
 
   /* FIX 2: Makes the image border render with round clipping smoothly */
   border-radius: 50%;
+  
 }
 
 /* CARDS DASHBOARD GRID */
@@ -624,6 +624,556 @@ body {
   color: #1a1f1a;
 }
 
+/*Teams LAYOUT*/
+.teams-hero {
+  position: relative;
+  min-height: 340px; /* Changed from height: 320px to give it breathing room */
+  background:
+    linear-gradient(rgba(26, 31, 26, 0.55), rgba(26, 31, 26, 0.75)),
+    /* Lightened gradients slightly */ url('../images/liverpool-champions.jpg') center 25% /cover;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.arsenal-theme{
+  background: linear-gradient(135deg, #ef0107 0%, #9c0004 100%);
+}
+.lfc-theme{
+  background: linear-gradient(135deg, #dd1d26 0%, #8a0e14 100%);
+}
+.chelsea-theme{
+  background: linear-gradient(135deg, #034694 0%, #011e42 100%);
+}
+.manchester-city-theme{
+  background: linear-gradient(135deg, #6cabdd 0%, #3a7fa8 100%);
+}
+.real-madrid-theme{
+  background: linear-gradient(135deg, #1f365c 0%, #112546 100%);
+}
+.barcelona-theme{
+  background: linear-gradient(135deg, #004d98 0%, #a50044 100%);
+}
+.atletico-theme{
+  background: linear-gradient(135deg, #cb3524 0%, #192e5b 100%);
+}
+.villarreal-theme{
+  background: linear-gradient(135deg, #d4a300 0%, #7a5c00 100%);
+}
+.alnassr-theme {
+  background: linear-gradient(135deg, #004297 0%, #f1cb12 100%);
+}
+.santos-theme {
+  background: linear-gradient(135deg, #141619 0%, #787977 100%);
+}
+.intermiami-theme {
+  background: linear-gradient(135deg, #f473b9 0%, #111317 100%);
+}
+
+
+/*PLAYERS PAGE*/
+.players-hero{
+  position: relative;
+  min-height: 340px; /* Changed from height: 320px to give it breathing room */
+  background:
+    linear-gradient(rgba(26, 31, 26, 0.55), rgba(26, 31, 26, 0.75)),
+    /* Lightened gradients slightly */ url('../images/cristiano-ronaldo-background.jpg') center 42% /cover;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+  margin-bottom: 40px;
+}
+.players-header-icon-circle {
+  width: 100px;  /* Bumped up from 40px to make the logo circle much bigger */
+  height: 100px; /* Bumped up from 40px */
+  background: #ffffff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden; 
+  padding: 1px; 
+}
+.player-avatar-box {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.15); /* Translucent white looks premium over gradients */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Subtle inner border line */
+  border-radius: 8px; /* Smooth rounded corners for the box frame */
+  display: flex;
+  align-items: flex-end; /* Keeps the cutout sitting on the bottom line of the box */
+  justify-content: center;
+  overflow: hidden; /* Clips any image parts that bleed outside the box */
+  flex-shrink: 0; /* Prevents the box from squeezing on small screens */
+  padding-top: 5px;
+}
+
+/* Ensure the cutout image resizes inside the box frame perfectly */
+.player-avatar-box .card-header-img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* HRAC - STATISTIKA */
+
+
+.profile-breadcrumb {
+  margin-bottom: 15px;
+}
+
+.profile-breadcrumb a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  color: #888e88;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  transition: color 0.2s ease;
+}
+
+.profile-breadcrumb a:hover {
+  color: #1a1f1a;
+}
+
+/* Hero Profiler Card Header */
+.profile-hero-card {
+  position: relative;
+  border-radius: 12px;
+  padding: 40px;
+  color: white;
+  min-height: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.profile-hero-main {
+  position: relative;
+  z-index: 2;
+}
+
+.profile-position-badge {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.profile-player-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  margin: 10px 0 5px 0;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+.profile-sub-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+}
+
+/* Quick Pills Header Row */
+.profile-hero-quick-stats {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.quick-stat-pill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.quick-stat-pill strong {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.quick-stat-pill span {
+  font-size: 9px;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+}
+
+.quick-stat-pill.rating-pill {
+  background: #f0c419;
+  border-color: #f0c419;
+  color: #1a1f1a;
+}
+
+/* Giant background decorative text */
+.profile-shirt-watermark {
+  position: absolute;
+  right: 40px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 240px;
+  line-height: 1;
+  font-weight: 900;
+  opacity: 0.08;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Structural Two-Column Grid Setup */
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.profile-main-stats-column,
+.profile-sidebar-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Individual Content Module Containers */
+.profile-section-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.card-section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: #1a1f1a;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.league-tag {
+  font-size: 11px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  background: #f4f5f0;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #666;
+}
+
+/* Grid Layout for Season 8-cell metric blocks */
+.overview-stats-box-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.overview-box {
+  background: #fdfdfb;
+  border: 1px solid #f0f1eb;
+  padding: 16px 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.overview-box strong {
+  font-size: 22px;
+  color: #1a1f1a;
+}
+
+.overview-box strong.highlight-yellow {
+  color: #c29d14;
+}
+
+.overview-box span {
+  font-size: 10px;
+  color: #888;
+  font-weight: 700;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
+/* Horizontal Performance Rating Bars Layout */
+.ratings-bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bar-label {
+  width: 110px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+}
+
+.bar-track {
+  flex: 1;
+  height: 8px;
+  background: #f0f1eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.bar-fill.yellow-fill { background: #f0c419; }
+.bar-fill.green-fill  { background: #116936; }
+
+.bar-value {
+  width: 25px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1f1a;
+}
+
+/* Premium Structured Data Tables */
+.table-responsive-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.profile-matches-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.profile-matches-table th {
+  font-size: 10px;
+  font-weight: 700;
+  color: #888;
+  padding: 12px 10px;
+  border-bottom: 2px solid #f0f1eb;
+  letter-spacing: 0.5px;
+}
+
+.profile-matches-table td {
+  padding: 14px 10px;
+  font-size: 13px;
+  color: #444;
+  border-bottom: 1px solid #f4f5f0;
+}
+
+.profile-matches-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Match result badge styles */
+.result-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  min-width: 48px;
+}
+
+.result-pill.win  { background: #e6f4ea; color: #137333; }
+.result-pill.draw { background: #fef7e0; color: #b06000; }
+.result-pill.loss { background: #fce8e6; color: #c5221f; }
+
+.table-rating {
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.table-rating.high { background: #116936; color: white; }
+.table-rating.med  { background: #f0c419; color: #1a1f1a; }
+
+/* Right Sidebar Data Rows */
+.info-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-sidebar-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f4f5f0;
+  font-size: 13px;
+}
+
+.info-sidebar-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #888;
+  font-size: 11px;
+}
+
+.info-val {
+  font-weight: 700;
+  color: #1a1f1a;
+}
+
+.info-val.highlight-green {
+  color: #116936;
+}
+
+/* SVG Radar Diagram Styling Rules */
+.radar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.radar-svg {
+  width: 100%;
+  max-width: 210px;
+}
+
+.radar-grid-line {
+  fill: none;
+  stroke: #e0e2db;
+  stroke-width: 1px;
+}
+
+.radar-fill-area {
+  fill: rgba(240, 196, 25, 0.35);
+  stroke: #f0c419;
+  stroke-width: 2px;
+}
+
+.radar-text-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 12px;
+  fill: #666;
+  letter-spacing: 0.5px;
+}
+
+/* Trophy Items Layout styling */
+.trophy-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f4f5f0;
+}
+
+.trophy-item-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.trophy-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trophy-icon {
+  font-size: 20px;
+}
+
+.trophy-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.trophy-details strong {
+  font-size: 13px;
+  color: #1a1f1a;
+}
+
+.trophy-details span {
+  font-size: 11px;
+  color: #888;
+}
+
+.trophy-count {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: #f0c419;
+}
+.haaland-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/haaland-background.jpg') center 26% /cover;
+}
+
+.cristiano-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/cristiano-ronaldo-background.jpg') center 36% /cover;
+}
+
+.saka-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/saka-background.jpg') center 25% /cover;
+}
+.salah-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/salah-background.jpg') center 15% /cover;
+}
+.cucurella-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/cucurella-background.jpg') center 35% /cover;
+}
+.neymar-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/neymar-background.jpg') center 10% /cover;
+}
+.messi-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/messi-background.jpg') center 35% /cover;
+}
+.mbappe-hero{
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/mbappe-background.jpg') center 30% /cover;
+}
+
+
+
 /* --- LAPTOPS & SMALLER MONITORS --- */
 @media (max-width: 1400px) {
   .news-flex-container {
@@ -665,7 +1215,7 @@ body {
     padding: 30px; /* Slightly tighter padding */
   }
   .hero-card h2 {
-    font-size: 38px; /* Scales down the title so it doesn't wrap into too many lines */
+    font-size: 28px; /* Scales down the title so it doesn't wrap into too many lines */
     margin: 8px 0;
   }
   .hero-card p {
@@ -693,7 +1243,30 @@ body {
   .stat-num {
     font-size: 36px; /* Slightly tighter stats presentation */
   }
+  .teams-hero{
+    min-height: 300px; /* Brings height down slightly to match the smaller viewport scale */
+    padding: 30px;
+  }
+  .players-hero {
+    min-height: 300px; /* Brings hero height down slightly to match laptop scales */
+    padding: 30px;
+  }
   
+  /* Prevent player names on smaller laptop cards from breaking into awkward lines */
+  .header-text-block h3 {
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  .header-text-block p {
+    font-size: 11px;
+  }
+  .read-btn{
+    padding: 8px 22px; /* Slightly more compact button size for laptops */
+    font-size: 18px;
+  }
+  .profile-details-grid {
+    grid-template-columns: 1fr; /* Stacks columns cleanly on laptop and tablets */
+  }
   
 }
 
@@ -796,7 +1369,75 @@ body {
     letter-spacing: 0.5px; /* Keeps it legible */
     color: #888e88; /* Slightly softens the color to look less aggressive */
   }
+  .teams-hero {
+    flex-direction: column;    /* Stacks text/crest content above the stats numbers row */
+    align-items: flex-start;   /* Aligns everything perfectly along the left margin */
+    justify-content: flex-start;
+    gap: 30px;                 /* Adds elegant breathing room between sections */
+    padding: 24px;
+    background-position: center 25%;
+  }
+
+  /* Moves your "LIVE NOW" badge into a standard layout alignment stream */
+  .teams-hero .popular-badge {
+    position: static; 
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  /* Spreads the individual team data blocks across the bottom available width */
+  .teams-hero .hero-stats-display {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Sleek translucent accent divider */
+    padding-top: 20px;
+    gap: 10px;
+  }
+  .players-hero {
+    flex-direction: column;    /* Stacks description text over the stats block row */
+    align-items: flex-start;   /* Aligns everything smoothly to the left margin */
+    justify-content: flex-start;
+    gap: 30px;                 /* Adds elegant breathing room between sections */
+    padding: 24px;
+    background-position: center 42%;
+  }
+
+  /* Moves the absolute "FOOTBALL LEGEND" badge back into the natural layout flow */
+  .players-hero .popular-badge {
+    position: static; 
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  /* Spreads the stats blocks neatly across the full screen width on mobile devices */
+  .players-hero .hero-stats-display {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Sleek translucent accent line */
+    padding-top: 20px;
+    gap: 10px;
+  }
+  .profile-player-name { font-size: 38px; }
+  .overview-stats-box-grid { grid-template-columns: repeat(2, 1fr); }
+
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
 }
+
+@media (max-width: 650px) {
+  .profile-section-card{
+    width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .profile-section-card{
+    width: 270px;
+  }
+}
+
 
 /* Make sure this is sitting at the bottom of your CSS file */
 @keyframes fadeIn {

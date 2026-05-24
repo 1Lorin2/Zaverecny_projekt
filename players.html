@@ -1,33 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kickoff</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-     <aside class="sidebar">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
       <div class="sidebar-logo">
-        <div class="logo-icon"><img src="images/football.png" alt=""></div>
+          <a href="index.html" class="logo-link">
+        <div class="logo-icon"><img src="images/football.png" alt="" /></div>
         <div class="logo-text">KICKOFF</div>
+        </a>
       </div>
 
-    <nav class="sidebar-nav">
-        <a class="nav-item" href="index.html"><img class="nav-icon" src="images/newspaper-folded.png" alt="">News</a>
-        <a class="nav-item" href="leagues.html"><img class="nav-icon" src="images/trophy.png" alt="">Leagues</a>
-        <a class="nav-item" href="teams.html"><img class="nav-icon" src="images/tshirt.png" alt="">Teams</a>
-        <a class="nav-item active" href="players.html"><img class="nav-icon" src="images/group.png" alt="">Players</a>
-        <a class="nav-item" href="matches.html"><img class="nav-icon" src="images/football-field.png" alt="">Matches</a>
-        <a class="nav-item" href="standings.html"><img class="nav-icon" src="images/podium.png" alt="">Standings</a>
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="index.html"
+          ><img
+            class="nav-icon"
+            src="images/newspaper-folded.png"
+            alt=""
+          />News</a
+        >
+        <a class="nav-item" href="leagues.html"
+          ><img class="nav-icon" src="images/trophy.png" alt="" />Leagues</a
+        >
+        <a class="nav-item" href="teams.html"
+          ><img class="nav-icon" src="images/tshirt.png" alt="" />Teams</a
+        >
+        <a class="nav-item active" href="players.html"
+          ><img class="nav-icon" src="images/group.png" alt="" />Players</a
+        >
+        <a class="nav-item" href="matches.html"
+          ><img
+            class="nav-icon"
+            src="images/football-field.png"
+            alt=""
+          />Matches</a
+        >
+        <a class="nav-item" href="standings.html"
+          ><img class="nav-icon" src="images/podium.png" alt="" />Standings</a
+        >
       </nav>
-
-      <div class="sidebar-footer">
-        <p>© Lorin Luca 2026</p>
-      </div>
-
     </aside>
+    <div class="content-wrapper">
+      <main class="main-content">
+        <div class="players-hero">
+          <div class="hero-banner-content">
+            <span class="popular-badge">FOOTBAll LEGEND</span>
 
-</body>
+            <div class="hero-league-title-row">
+              <div class="hero-logo-circle" style="padding: 1px">
+                <img
+                  src="images/Ronaldo-face.jpg"
+                  alt="CR7 Logo"
+                  class="hero-circle-img"
+                  style="object-fit: cover; border-radius: 50%"
+                />
+              </div>
+              <h2>CRISTIANO RONALDO</h2>
+            </div>
+
+            <p class="hero-league-desc">
+              One of the greatest football players of all time. An absolute
+              goal-scoring machine, standard-setter, and five-time Ballon d'Or
+              winner who continues to break records at
+              the highest level.
+            </p>
+
+            <a href="cristiano.html">
+              <button class="read-btn" style="margin-top: 15px">
+                VIEW ALL STATS &rarr;
+              </button>
+            </a>
+          </div>
+
+          <div class="hero-stats-display">
+            <div class="stat-item">
+              <span class="stat-num">5x</span>
+              <span class="stat-label">BALLON D'OR</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">900+</span>
+              <span class="stat-label">CAREER GOALS</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">7x</span>
+              <span class="stat-label">LEAGUE TITLES</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-subtitle">PREMIER LEAGUE</h2>
+        <div class="leagues-dashboard-grid">
+           <div class="dashboard-card">
+            <div class="card-header-block manchester-city-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/haaland.png"
+                  alt="Erling Haaland"
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>ERLING HAALAND</h3>
+                <p>STRIKER • MANCHESTER CITY FC</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>34</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>17</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>37</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">Norway</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">9.0 ⭐</span>
+            </div>
+
+           <a href="haaland.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block arsenal-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/saka.png"
+                  alt="Bukayo Saka"
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>BUKAYO SAKA</h3>
+                <p>LEFT WINGER • MANCHESTER CITY FC</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>25</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>10</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>30</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">England</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">8.0 ⭐</span>
+            </div>
+
+            <a href="saka.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block lfc-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/salah.png"
+                  alt="Mohamed Salah"
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>MOHAMED SALAH</h3>
+                <p>RIGHT WINGER • LIVERPOOL FC</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>22</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>11</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>34</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">Egypt</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">8.2 ⭐</span>
+            </div>
+
+            <a href="salah.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block chelsea-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/cucurella.png"
+                  alt="Marc Cucurella"
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>MARC CUCURELLA</h3>
+                <p>LEFT BACK • ARSENAL FC</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>5</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>3</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>34</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">Spain</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">8.5 ⭐</span>
+            </div>
+
+            <a href="cucurella.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+          
+        </div>
+        <h2 class="section-subtitle" style="margin-top: 40px">
+          OTHER LEAGUES
+        </h2>
+        <div class="leagues-dashboard-grid">
+          <div class="dashboard-card">
+            <div class="card-header-block alnassr-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/ronaldo-alnassr.png"
+                  alt="Cristiano Ronaldo"
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>Cristiano Ronaldo</h3>
+                <p>STRIKER • AL-NASSR FC</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>45</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>18</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>33</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">Portugal</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">9.5 ⭐</span>
+            </div>
+
+            <a href="cristiano.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block santos-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/neymar.png"
+                  alt="Neymar Jr."
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>Neymar Jr.</h3>
+                <p>LEFT WINGER • SANTOS FC</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>20</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>15</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>29</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">Brazil</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">8.6 ⭐</span>
+            </div>
+
+            <a href="neymar.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block intermiami-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/messi.png"
+                  alt="Lionel Messi"
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>Lionel Messi</h3>
+                <p>FORWARD • INTER MIAMI FC</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>40</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>26</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>32</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">Argentina</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">9.2 ⭐</span>
+            </div>
+
+            <a href="messi.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-header-block real-madrid-theme">
+              <div class="player-avatar-box">
+                <img
+                  src="../images/mbappe.png"
+                  alt="Kylian Mbappé"
+                  class="card-header-img"
+                 style="width: 80px; height: 80px;"
+                />
+              </div>
+              <div class="header-text-block">
+                <h3>Kylian Mbappé</h3>
+                <p>STRIKER • REAL MADRID CF</p>
+              </div>
+            </div>
+
+            <div class="card-stats-row">
+              <div class="mini-stat"><strong>48</strong><span>GOALS</span></div>
+              <div class="mini-stat">
+                <strong>28</strong><span>ASSISTS</span>
+              </div>
+              <div class="mini-stat">
+                <strong>37</strong><span>MATCHES</span>
+              </div>
+            </div>
+
+            <div class="card-leader-row">
+              <div class="leader-info">
+                <span class="leader-label">🌍 NATIONALITY</span>
+                <span class="leader-name">France</span>
+              </div>
+              <span class="leader-points" style="color: #f0c419">9.8 ⭐</span>
+            </div>
+
+            <a href="mbappe.html"> <button class="view-league-btn">VIEW PROFILE &rarr;</button></a>
+          </div>
+        </div>
+
+      </main>
+      <footer class="main-footer">
+        <p>© Lorin Luca 2026</p>
+      </footer>
+    </div>
+  </body>
 </html>
