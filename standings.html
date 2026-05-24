@@ -1,31 +1,658 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kickoff</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kickoff - Standings</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-     <aside class="sidebar">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
       <div class="sidebar-logo">
         <a href="index.html" class="logo-link">
-          <div class="logo-icon"><img src="images/football.png" alt=""></div>
+          <div class="logo-icon"><img src="images/football.png" alt="" /></div>
           <div class="logo-text">KICKOFF</div>
         </a>
       </div>
 
-     <nav class="sidebar-nav">
-        <a class="nav-item" href="index.html"><img class="nav-icon" src="images/newspaper-folded.png" alt="">News</a>
-        <a class="nav-item" href="leagues.html"><img class="nav-icon" src="images/trophy.png" alt="">Leagues</a>
-        <a class="nav-item" href="teams.html"><img class="nav-icon" src="images/tshirt.png" alt="">Teams</a>
-        <a class="nav-item" href="players.html"><img class="nav-icon" src="images/group.png" alt="">Players</a>
-        <a class="nav-item" href="matches.html"><img class="nav-icon" src="images/football-field.png" alt="">Matches</a>
-        <a class="nav-item active" href="standings.html"><img class="nav-icon" src="images/podium.png" alt="">Standings</a>
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="index.html"
+          ><img
+            class="nav-icon"
+            src="images/newspaper-folded.png"
+            alt=""
+          />News</a
+        >
+        <a class="nav-item" href="leagues.html"
+          ><img class="nav-icon" src="images/trophy.png" alt="" />Leagues</a
+        >
+        <a class="nav-item" href="teams.html"
+          ><img class="nav-icon" src="images/tshirt.png" alt="" />Teams</a
+        >
+        <a class="nav-item" href="players.html"
+          ><img class="nav-icon" src="images/group.png" alt="" />Players</a
+        >
+        <a class="nav-item" href="matches.html"
+          ><img
+            class="nav-icon"
+            src="images/football-field.png"
+            alt=""
+          />Matches</a
+        >
+        <a class="nav-item active" href="standings.html"
+          ><img class="nav-icon" src="images/podium.png" alt="" />Standings</a
+        >
       </nav>
-
     </aside>
 
-</body>
+    <div class="content-wrapper">
+      <main class="main-content">
+        <header class="content-header">
+          <h1>STANDINGS</h1>
+          <div class="date-display">FINAL STANDINGS — 2025/26</div>
+        </header>
+
+        <nav class="league-tabs-nav">
+          <a href="standings.html" class="league-tab-link active"
+            >Premier League</a
+          >
+          <a href="standings-laliga.html" class="league-tab-link">La Liga</a>
+          <a href="standings-seriea.html" class="league-tab-link">Serie A</a>
+          <a href="standings-bundesliga.html" class="league-tab-link"
+            >Bundesliga</a
+          >
+          <a href="standings-ligue1.html" class="league-tab-link">Ligue 1</a>
+        </nav>
+
+        <div class="standings-container-card">
+          <table class="standings-table">
+            <thead>
+              <tr>
+                <th class="col-rank">Pos</th>
+                <th class="col-team">Team</th>
+                <th class="col-stat">P</th>
+                <th class="col-stat">W</th>
+                <th class="col-stat">D</th>
+                <th class="col-stat">L</th>
+                <th class="col-stat mobile-hide">GD</th>
+                <th class="col-pts">PTS</th>
+                <th class="col-form mobile-hide">Form</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="pos-ucl">
+                <td class="rank-number">1</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/arsenal.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Arsenal</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>26</td>
+                <td>7</td>
+                <td>5</td>
+                <td class="mobile-hide">+44</td>
+                <td class="pts-number">85</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-ucl">
+                <td class="rank-number">2</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/manchester-city.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Manchester City</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>23</td>
+                <td>9</td>
+                <td>6</td>
+                <td class="mobile-hide">+42</td>
+                <td class="pts-number">78</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-ucl">
+                <td class="rank-number">3</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/united.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Manchester United</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>20</td>
+                <td>11</td>
+                <td>7</td>
+                <td class="mobile-hide">+19</td>
+                <td class="pts-number">71</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-ucl">
+                <td class="rank-number">4</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/villa.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Aston Villa</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>19</td>
+                <td>8</td>
+                <td>11</td>
+                <td class="mobile-hide">+7</td>
+                <td class="pts-number">65</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f loss">L</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-uel">
+                <td class="rank-number">5</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/liverpool-logo.webp"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Liverpool</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>17</td>
+                <td>9</td>
+                <td>12</td>
+                <td class="mobile-hide">+10</td>
+                <td class="pts-number">60</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-uel">
+                <td class="rank-number">6</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/bournemouth.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">AFC Bournemouth</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>13</td>
+                <td>18</td>
+                <td>7</td>
+                <td class="mobile-hide">+4</td>
+                <td class="pts-number">57</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f draw">D</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-uel">
+                <td class="rank-number">7</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/sunderland.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Sunderland</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>14</td>
+                <td>12</td>
+                <td>12</td>
+                <td class="mobile-hide">-6</td>
+                <td class="pts-number">54</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-uecl">
+                <td class="rank-number">8</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/brighton.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name"
+                      >Brighton</span
+                    >
+                  </div>
+                </td>
+                <td>38</td>
+                <td>14</td>
+                <td>11</td>
+                <td>13</td>
+                <td class="mobile-hide">+6</td>
+                <td class="pts-number">53</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">9</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/brentford.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Brentford</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>14</td>
+                <td>11</td>
+                <td>13</td>
+                <td class="mobile-hide">+3</td>
+                <td class="pts-number">53</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f draw">D</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">10</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/chelsea.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Chelsea</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>14</td>
+                <td>10</td>
+                <td>14</td>
+                <td class="mobile-hide">+6</td>
+                <td class="pts-number">52</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">11</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/fulham.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Fulham</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>15</td>
+                <td>7</td>
+                <td>16</td>
+                <td class="mobile-hide">-4</td>
+                <td class="pts-number">52</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">12</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/newcastle.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Newcastle United</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>14</td>
+                <td>7</td>
+                <td>17</td>
+                <td class="mobile-hide">-2</td>
+                <td class="pts-number">49</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f draw">D</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">13</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/everton.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Everton</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>13</td>
+                <td>10</td>
+                <td>15</td>
+                <td class="mobile-hide">-3</td>
+                <td class="pts-number">49</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f loss">L</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">14</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/leeds.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Leeds United</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>11</td>
+                <td>14</td>
+                <td>13</td>
+                <td class="mobile-hide">-7</td>
+                <td class="pts-number">47</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">15</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/palace.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Crystal Palace</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>11</td>
+                <td>12</td>
+                <td>15</td>
+                <td class="mobile-hide">-10</td>
+                <td class="pts-number">45</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">16</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/forest.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Nottingham Forest</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>11</td>
+                <td>11</td>
+                <td>16</td>
+                <td class="mobile-hide">-3</td>
+                <td class="pts-number">44</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rank-number">17</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/tottenham.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Tottenham Hotspur</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>10</td>
+                <td>11</td>
+                <td>17</td>
+                <td class="mobile-hide">-9</td>
+                <td class="pts-number">41</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f win">W</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-relegation">
+                <td class="rank-number">18</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/westham.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">West Ham United</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>10</td>
+                <td>9</td>
+                <td>19</td>
+                <td class="mobile-hide">-19</td>
+                <td class="pts-number">39</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f win">W</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f win">W</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-relegation">
+                <td class="rank-number">19</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/burnley.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Burnley</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>4</td>
+                <td>10</td>
+                <td>24</td>
+                <td class="mobile-hide">-37</td>
+                <td class="pts-number">22</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f loss">L</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="pos-relegation">
+                <td class="rank-number">20</td>
+                <td>
+                  <div class="table-team-info">
+                    <img
+                      src="images/wolves.svg"
+                      class="table-club-badge"
+                      alt=""
+                    /><span class="table-team-name">Wolverhampton</span>
+                  </div>
+                </td>
+                <td>38</td>
+                <td>3</td>
+                <td>11</td>
+                <td>24</td>
+                <td class="mobile-hide">-41</td>
+                <td class="pts-number">20</td>
+                <td class="mobile-hide">
+                  <div class="form-wrapper">
+                    <span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f loss">L</span
+                    ><span class="badge-f draw">D</span
+                    ><span class="badge-f draw">D</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-legend-container">
+          <div class="legend-item">
+            <span class="legend-box ucl-box"></span> UEFA Champions League
+            qualification
+          </div>
+          <div class="legend-item">
+            <span class="legend-box uel-box"></span> UEFA Europa League
+            qualification
+          </div>
+          <div class="legend-item">
+            <span class="legend-box uecl-box"></span> UEFA Conference League
+            qualification
+          </div>
+          <div class="legend-item">
+            <span class="legend-box relegation-box"></span> Relegated to the
+            Championship
+          </div>
+        </div>
+      </main>
+
+      <footer class="main-footer">
+        <p>© Lorin Luca 2026</p>
+      </footer>
+    </div>
+  </body>
 </html>

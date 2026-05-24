@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -172,7 +172,7 @@ body {
   height: 600px;
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/doue.webp') center 10% /cover;
+    url('../images/doue.webp') center 10% / cover;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -233,8 +233,6 @@ body {
   /* Changes cursor to a hand pointer */
   cursor: pointer;
 }
-
-
 
 .card-img {
   height: 180px;
@@ -334,10 +332,9 @@ body {
   padding: 4px 14px;
   border-radius: 4px;
   position: absolute;
-        top: 28px;
-        left: 40px;
+  top: 28px;
+  left: 40px;
 }
-
 
 .hero-league-title-row {
   display: flex;
@@ -428,7 +425,6 @@ body {
 
   /* FIX 2: Makes the image border render with round clipping smoothly */
   border-radius: 50%;
-  
 }
 
 /* CARDS DASHBOARD GRID */
@@ -493,15 +489,15 @@ body {
 }
 
 .header-icon-circle {
-  width: 55px;  /* Bumped up from 40px to make the logo circle much bigger */
+  width: 55px; /* Bumped up from 40px to make the logo circle much bigger */
   height: 55px; /* Bumped up from 40px */
-  background: #ffffff; 
+  background: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 6px; /* Slightly more padding so the logo fits comfortably inside */
 }
 
@@ -630,7 +626,8 @@ body {
   min-height: 340px; /* Changed from height: 320px to give it breathing room */
   background:
     linear-gradient(rgba(26, 31, 26, 0.55), rgba(26, 31, 26, 0.75)),
-    /* Lightened gradients slightly */ url('../images/liverpool-champions.jpg') center 25% /cover;
+    /* Lightened gradients slightly */ url('../images/liverpool-champions.jpg')
+      center 25% / cover;
   border-radius: 12px;
   padding: 40px;
   display: flex;
@@ -640,28 +637,28 @@ body {
   margin-bottom: 40px;
 }
 
-.arsenal-theme{
+.arsenal-theme {
   background: linear-gradient(135deg, #ef0107 0%, #9c0004 100%);
 }
-.lfc-theme{
+.lfc-theme {
   background: linear-gradient(135deg, #dd1d26 0%, #8a0e14 100%);
 }
-.chelsea-theme{
+.chelsea-theme {
   background: linear-gradient(135deg, #034694 0%, #011e42 100%);
 }
-.manchester-city-theme{
+.manchester-city-theme {
   background: linear-gradient(135deg, #6cabdd 0%, #3a7fa8 100%);
 }
-.real-madrid-theme{
+.real-madrid-theme {
   background: linear-gradient(135deg, #1f365c 0%, #112546 100%);
 }
-.barcelona-theme{
+.barcelona-theme {
   background: linear-gradient(135deg, #004d98 0%, #a50044 100%);
 }
-.atletico-theme{
+.atletico-theme {
   background: linear-gradient(135deg, #cb3524 0%, #192e5b 100%);
 }
-.villarreal-theme{
+.villarreal-theme {
   background: linear-gradient(135deg, #d4a300 0%, #7a5c00 100%);
 }
 .alnassr-theme {
@@ -674,14 +671,14 @@ body {
   background: linear-gradient(135deg, #f473b9 0%, #111317 100%);
 }
 
-
 /*PLAYERS PAGE*/
-.players-hero{
+.players-hero {
   position: relative;
   min-height: 340px; /* Changed from height: 320px to give it breathing room */
   background:
     linear-gradient(rgba(26, 31, 26, 0.55), rgba(26, 31, 26, 0.75)),
-    /* Lightened gradients slightly */ url('../images/cristiano-ronaldo-background.jpg') center 42% /cover;
+    /* Lightened gradients slightly */
+    url('../images/cristiano-ronaldo-background.jpg') center 42% / cover;
   border-radius: 12px;
   padding: 40px;
   display: flex;
@@ -691,21 +688,26 @@ body {
   margin-bottom: 40px;
 }
 .players-header-icon-circle {
-  width: 100px;  /* Bumped up from 40px to make the logo circle much bigger */
+  width: 100px; /* Bumped up from 40px to make the logo circle much bigger */
   height: 100px; /* Bumped up from 40px */
-  background: #ffffff; 
+  background: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  overflow: hidden; 
-  padding: 1px; 
+  overflow: hidden;
+  padding: 1px;
 }
 .player-avatar-box {
   width: 80px;
   height: 80px;
-  background-color: rgba(255, 255, 255, 0.15); /* Translucent white looks premium over gradients */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.15
+  ); /* Translucent white looks premium over gradients */
   border: 1px solid rgba(255, 255, 255, 0.25); /* Subtle inner border line */
   border-radius: 8px; /* Smooth rounded corners for the box frame */
   display: flex;
@@ -725,7 +727,6 @@ body {
 }
 
 /* HRAC - STATISTIKA */
-
 
 .profile-breadcrumb {
   margin-bottom: 15px;
@@ -952,8 +953,12 @@ body {
   border-radius: 4px;
 }
 
-.bar-fill.yellow-fill { background: #f0c419; }
-.bar-fill.green-fill  { background: #116936; }
+.bar-fill.yellow-fill {
+  background: #f0c419;
+}
+.bar-fill.green-fill {
+  background: #116936;
+}
 
 .bar-value {
   width: 25px;
@@ -1006,17 +1011,36 @@ body {
   min-width: 48px;
 }
 
-.result-pill.win  { background: #e6f4ea; color: #137333; }
-.result-pill.draw { background: #fef7e0; color: #b06000; }
-.result-pill.loss { background: #fce8e6; color: #c5221f; }
+.result-pill.win {
+  background: #e6f4ea;
+  color: #137333;
+}
+.result-pill.draw {
+  background: #fef7e0;
+  color: #b06000;
+}
+.result-pill.loss {
+  background: #fce8e6;
+  color: #c5221f;
+}
 
 .table-rating {
   font-weight: 700;
   padding: 2px 6px;
   border-radius: 4px;
 }
-.table-rating.high { background: #116936; color: white; }
-.table-rating.med  { background: #f0c419; color: #1a1f1a; }
+.table-rating.high {
+  background: #116936;
+  color: white;
+}
+.table-rating.med {
+  background: #f0c419;
+  color: #1a1f1a;
+}
+.table-rating.low {
+  background: #f72727;
+  color: #ffffff;
+}
 
 /* Right Sidebar Data Rows */
 .info-sidebar-list {
@@ -1129,50 +1153,539 @@ body {
   font-size: 18px;
   color: #f0c419;
 }
-.haaland-hero{
+.haaland-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/haaland-background.jpg') center 26% /cover;
+    url('../images/haaland-background.jpg') center 26% / cover;
 }
 
-.cristiano-hero{
+.cristiano-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/cristiano-ronaldo-background.jpg') center 36% /cover;
+    url('../images/cristiano-ronaldo-background.jpg') center 36% / cover;
 }
 
-.saka-hero{
+.saka-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/saka-background.jpg') center 25% /cover;
+    url('../images/saka-background.jpg') center 25% / cover;
 }
-.salah-hero{
+.salah-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/salah-background.jpg') center 15% /cover;
+    url('../images/salah-background.jpg') center 15% / cover;
 }
-.cucurella-hero{
+.cucurella-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/cucurella-background.jpg') center 35% /cover;
+    url('../images/cucurella-background.jpg') center 35% / cover;
 }
-.neymar-hero{
+.neymar-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/neymar-background.jpg') center 10% /cover;
+    url('../images/neymar-background.jpg') center 10% / cover;
 }
-.messi-hero{
+.messi-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/messi-background.jpg') center 35% /cover;
+    url('../images/messi-background.jpg') center 35% / cover;
 }
-.mbappe-hero{
+.mbappe-hero {
   background:
     linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
-    url('../images/mbappe-background.jpg') center 30% /cover;
+    url('../images/mbappe-background.jpg') center 30% / cover;
+}
+.liverpool-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/liverpool-champions.jpg') center 25% / cover;
+}
+.real-madrid-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/real-madrid-win.webp') center 50% / cover;
+}
+.manchester-city-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/manchester-city-win.jpg') center 60% / cover;
+}
+.arsenal-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/arsenal-win.jpg') center 35% / cover;
+}
+.chelsea-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/chelsea-win.webp') center 50% / cover;
+}
+.barcelona-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/barcelona-win.webp') center 50% / cover;
+}
+.atletico-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/atletico-win.jpg') center 40% / cover;
+}
+.villarreal-hero {
+  background:
+    linear-gradient(to right, rgba(26, 31, 26, 0.9), rgba(26, 31, 26, 0.4)),
+    url('../images/villarreal-win.jpg') center 45% / cover;
 }
 
+/* Zapasy */
+/* --- Matches Layout Heading Section --- */
+.matches-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
 
+.matches-main-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #111827;
+  margin: 0;
+}
+
+.matches-current-date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4b5563;
+  letter-spacing: 0.5px;
+}
+
+/* --- Individual Matches Container Boxes --- */
+.matches-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1000px; /* Aligns comfortably with the rest of your UI boxes */
+}
+
+.match-fixture-card {
+  background: #ffffff;
+  border: 1px solid #eaecef;
+  border-radius: 16px;
+  padding: 16px 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+}
+
+.match-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.match-time-stamp {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.match-status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.status-scheduled {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.status-finished {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* --- Center Row Grid containing Teams & Scores --- */
+.match-card-body {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.match-team {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.team-home {
+  justify-content: flex-start;
+}
+
+.team-away {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.match-badge-placeholder {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.match-team-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+/* --- Score Column Variants --- */
+.match-center-score {
+  min-width: 100px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.score-vs {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.score-numbers {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: 4px;
+}
+
+/* --- Bottom Card Stadium row --- */
+.match-card-footer {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.match-stadium-name {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+/* Layout Wrapper Alignment */
+.matches-page-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.matches-left-column {
+  flex: 1;
+}
+
+/* Bigger Sized Sidebar */
+.main-scoring-sidebar {
+  width: 360px; /* Increased width for a cleaner, bolder look */
+  flex-shrink: 0;
+}
+
+.scoring-full-card {
+  background: #ffffff;
+  border: 1px solid #eaecef;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.panel-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #9ca3af;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Rows & Progress Bars */
+.massive-row {
+  margin-bottom: 20px;
+}
+.massive-row:last-child {
+  margin-bottom: 0;
+}
+
+.progress-stat-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.stat-team-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-team-badge {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.stat-team-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.stat-number-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat-number-label small {
+  font-size: 0.65rem;
+  color: #9ca3af;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+/* Progress Fills */
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #064e3b; /* Dark athletic green */
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+/* --- STANDINGS PAGE STYLES --- */
+
+/* League Links Bar */
+.league-tabs-nav {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  overflow-x: auto; /* Adds a clean swipe scrollbar on small devices if tabs overflow */
+  padding-bottom: 4px;
+}
+
+.league-tab-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #4b5563; /* Medium grey */
+  background-color: #f3f4f6;
+  padding: 10px 18px;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  white-space: nowrap; /* Keeps tabs from wrapping ugly */
+}
+
+.league-tab-link:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.league-tab-link.active {
+  background-color: #064e3b; /* Athletic dark green */
+  color: #ffffff;
+}
+
+/* Standings Card Panel */
+.standings-container-card {
+  background: #ffffff;
+  border: 1px solid #eaecef;
+  border-radius: 16px;
+  padding: 8px;
+  overflow-x: auto; /* Protects mobile layouts if tables extend too far */
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Table Header Formatting */
+.standings-table th {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 16px 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* Table Body Cell Formatting */
+.standings-table td {
+  padding: 14px 12px;
+  font-size: 0.95rem;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.standings-table tr:last-child td {
+  border-bottom: none; /* Keeps bottom corner radius neat */
+}
+
+/* Row Hover Interaction */
+.standings-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Specific Columns Configuration */
+.col-rank {
+  width: 50px;
+  text-align: center;
+}
+.rank-number {
+  font-weight: 700;
+  color: #6b7280;
+  text-align: center;
+}
+
+.col-team {
+  width: auto;
+}
+.table-team-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.table-club-badge {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.table-team-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+.col-stat {
+  width: 60px;
+  text-align: center;
+}
+.standings-table td:nth-child(n + 3) {
+  text-align: center; /* Centers all numerical stat data cells automatically */
+}
+
+.col-pts {
+  width: 70px;
+  text-align: center;
+}
+.pts-number {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* European Qualification Borders (Left edge indicator strips) */
+.pos-ucl td:first-child {
+  border-left: 4px solid #3b82f6; /* Blue for Champions League */
+}
+.pos-uel td:first-child {
+  border-left: 4px solid #f59e0b; /* Orange for Europa League */
+}
+.pos-uecl td:first-child {
+  border-left: 4px solid #22c55e; /* Vibrant Green indicator */
+}
+/* Relegation Zone Side Strip */
+.pos-relegation td:first-child {
+  border-left: 4px solid #ef4444; /* Clean Red indicator for Relegation */
+}
+/* --- FORM MATCH BADGES --- */
+.col-form {
+  width: 150px;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.badge-f {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.badge-f.win {
+  background-color: #10b981;
+} /* Emerald Green */
+.badge-f.draw {
+  background-color: #6b7280;
+} /* Slate Grey */
+.badge-f.loss {
+  background-color: #ef4444;
+} /* Crimson Red */
+
+/* --- LEAGUE LEGEND BLOCK --- */
+.table-legend-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 16px;
+  padding: 8px 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-box {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.ucl-box {
+  background-color: #3b82f6;
+}
+.uel-box {
+  background-color: #f59e0b;
+}
+.uecl-box {
+  background-color: #22c55e;
+}
+.relegation-box {
+  background-color: #ef4444;
+}
 
 /* --- LAPTOPS & SMALLER MONITORS --- */
 @media (max-width: 1400px) {
@@ -1222,9 +1735,12 @@ body {
     font-size: 14px; /* Makes the description text a bit more compact */
     max-width: 80%; /* Prevents text from stretching too wide */
   }
-/* LEAGUES DASHBOARD - BREAKPOINT 1 (LAPTOPS) */
+  /* LEAGUES DASHBOARD - BREAKPOINT 1 (LAPTOPS) */
   .leagues-dashboard-grid {
-    grid-template-columns: repeat(2, 1fr); /* Shifts league grids from 3 columns down to 2 columns */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Shifts league grids from 3 columns down to 2 columns */
     gap: 20px;
   }
   .leagues-hero {
@@ -1236,14 +1752,14 @@ body {
   }
 
   .hero-logo-circle {
-    width: 80px;  /* Slightly scales down the white circle emblem wrapper */
+    width: 80px; /* Slightly scales down the white circle emblem wrapper */
     height: 80px;
   }
 
   .stat-num {
     font-size: 36px; /* Slightly tighter stats presentation */
   }
-  .teams-hero{
+  .teams-hero {
     min-height: 300px; /* Brings height down slightly to match the smaller viewport scale */
     padding: 30px;
   }
@@ -1251,7 +1767,7 @@ body {
     min-height: 300px; /* Brings hero height down slightly to match laptop scales */
     padding: 30px;
   }
-  
+
   /* Prevent player names on smaller laptop cards from breaking into awkward lines */
   .header-text-block h3 {
     font-size: 20px;
@@ -1260,12 +1776,38 @@ body {
   .header-text-block p {
     font-size: 11px;
   }
-  .read-btn{
+  .read-btn {
     padding: 8px 22px; /* Slightly more compact button size for laptops */
     font-size: 18px;
   }
   .profile-details-grid {
     grid-template-columns: 1fr; /* Stacks columns cleanly on laptop and tablets */
+  }
+  .matches-page-layout {
+    flex-direction: column; /* Stacks match list and stats vertically */
+    align-items: stretch;
+    gap: 24px; /* Reduces space between elements */
+  }
+
+  .main-scoring-sidebar {
+    width: 100%; /* Sidebar takes full width below the matches */
+  }
+
+  .main-content {
+    padding: 30px; /* Shrinks page padding slightly */
+  }
+
+  /* Make match cards slightly smaller and more compact */
+  .match-fixture-card {
+    padding: 16px;
+  }
+
+  .match-team-name {
+    font-size: 1.1rem; /* Scales down team text size */
+  }
+
+  .match-center-score {
+    font-size: 1.3rem; /* Adapts vs/score text size */
   }
   
 }
@@ -1293,12 +1835,12 @@ body {
     font-size: 13px;
     max-width: 100%; /* Lets the text use the full card width on small screens */
   }
-  
+
   .read-btn {
     padding: 8px 18px; /* Makes the action button slightly more compact */
     font-size: 18px;
   }
-  .card-overlay-content{
+  .card-overlay-content {
     font-size: 12px;
   }
 
@@ -1349,7 +1891,7 @@ body {
     padding-top: 20px;
     gap: 10px;
   }
-  
+
   .stat-num {
     font-size: 32px;
   }
@@ -1370,17 +1912,17 @@ body {
     color: #888e88; /* Slightly softens the color to look less aggressive */
   }
   .teams-hero {
-    flex-direction: column;    /* Stacks text/crest content above the stats numbers row */
-    align-items: flex-start;   /* Aligns everything perfectly along the left margin */
+    flex-direction: column; /* Stacks text/crest content above the stats numbers row */
+    align-items: flex-start; /* Aligns everything perfectly along the left margin */
     justify-content: flex-start;
-    gap: 30px;                 /* Adds elegant breathing room between sections */
+    gap: 30px; /* Adds elegant breathing room between sections */
     padding: 24px;
     background-position: center 25%;
   }
 
   /* Moves your "LIVE NOW" badge into a standard layout alignment stream */
   .teams-hero .popular-badge {
-    position: static; 
+    position: static;
     display: inline-block;
     margin-bottom: 12px;
   }
@@ -1394,17 +1936,17 @@ body {
     gap: 10px;
   }
   .players-hero {
-    flex-direction: column;    /* Stacks description text over the stats block row */
-    align-items: flex-start;   /* Aligns everything smoothly to the left margin */
+    flex-direction: column; /* Stacks description text over the stats block row */
+    align-items: flex-start; /* Aligns everything smoothly to the left margin */
     justify-content: flex-start;
-    gap: 30px;                 /* Adds elegant breathing room between sections */
+    gap: 30px; /* Adds elegant breathing room between sections */
     padding: 24px;
     background-position: center 42%;
   }
 
   /* Moves the absolute "FOOTBALL LEGEND" badge back into the natural layout flow */
   .players-hero .popular-badge {
-    position: static; 
+    position: static;
     display: inline-block;
     margin-bottom: 12px;
   }
@@ -1417,27 +1959,127 @@ body {
     padding-top: 20px;
     gap: 10px;
   }
-  .profile-player-name { font-size: 38px; }
-  .overview-stats-box-grid { grid-template-columns: repeat(2, 1fr); }
+  .profile-player-name {
+    font-size: 38px;
+  }
+  .overview-stats-box-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-  
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
-  
+  .match-fixture-card {
+    padding: 12px 8px;
+  }
+
+  .match-team-name {
+    font-size: 0.9rem;
+  }
+
+  .match-badge-placeholder {
+    width: 28px;
+    height: 28px;
+  }
+
+  .match-center-score {
+    font-size: 1rem;
+    min-width: 40px; /* Keeps vs or score text from wrapping ugly */
+    text-align: center;
+  }
+
+  /* Scale down the interior of your Top Scoring Teams sidebar panel */
+  .scoring-full-card {
+    padding: 16px;
+  }
+
+  .stat-team-label {
+    font-size: 0.8rem;
+  }
+
+  .stat-number-label {
+    font-size: 0.9rem;
+  }
+
+  .sidebar-team-badge {
+    width: 18px;
+    height: 18px;
+  }
+  /* 1. Stack or wrap the league navigation buttons neatly */
+  .league-tabs-nav {
+    flex-wrap: wrap; /* Allows buttons to drop to a new line instead of overflowing */
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .league-tab-link {
+    padding: 8px 14px; /* Makes tabs slightly smaller and easier to tap */
+    font-size: 0.8rem;
+    flex-grow: 1;      /* Makes tabs expand evenly to fill the row width */
+    text-align: center;
+  }
+
+  /* 2. Shrink the table structure to guarantee a perfect fit */
+  .standings-container-card {
+    padding: 4px;      /* Frees up side margins inside the card container */
+    border-radius: 12px;
+  }
+
+  .standings-table th, 
+  .standings-table td {
+    padding: 10px 6px; /* Tighter padding inside cells */
+    font-size: 0.8rem; /* Smaller typography overall */
+  }
+
+  .table-club-badge {
+    width: 18px;       /* Scale down team badges */
+    height: 18px;
+  }
+
+  .table-team-name {
+    font-size: 0.8rem;
+    max-width: 90px;   /* Prevents long team names from stretching the screen */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if a name is too long (e.g., Brighton & Hove...) */
+  }
+
+  /* 3. Hide non-essential columns to make room on narrow screens */
+  /* This targets Wins (W), Draws (D), Losses (L), and Goal Difference (GD) columns */
+  .standings-table th:nth-child(4), .standings-table td:nth-child(4), /* W */
+  .standings-table th:nth-child(5), .standings-table td:nth-child(5), /* D */
+  .standings-table th:nth-child(6), .standings-table td:nth-child(6), /* L */
+  .standings-table th:nth-child(9), .standings-table td:nth-child(9)  /* Form */ {
+    display: none;
+  }
+
+  /* 4. Compact the Form Badges so they still fit next to Points */
+  .col-form {
+    width: 95px;       /* Shrink the column width constraint */
+  }
+
+  .form-wrapper {
+    gap: 3px;          /* Tighter spacing between circles */
+  }
+
+  .badge-f {
+    width: 15px;       /* Scale down form circle sizes */
+    height: 15px;
+    font-size: 0.6rem; /* Tiny text inside form badges */
+  }
 }
 
 @media (max-width: 650px) {
-  .profile-section-card{
+  .profile-section-card {
     width: 350px;
   }
 }
 @media (max-width: 480px) {
-  .profile-section-card{
+  .profile-section-card {
     width: 270px;
   }
 }
-
 
 /* Make sure this is sitting at the bottom of your CSS file */
 @keyframes fadeIn {

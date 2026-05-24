@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kickoff - Bundesliga Standings</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <a href="index.html" class="logo-link">
+        <div class="logo-icon"><img src="images/football.png" alt=""></div>
+        <div class="logo-text">KICKOFF</div>
+      </a>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="index.html"><img class="nav-icon" src="images/newspaper-folded.png" alt="">News</a>
+      <a class="nav-item" href="leagues.html"><img class="nav-icon" src="images/trophy.png" alt="">Leagues</a>
+      <a class="nav-item" href="teams.html"><img class="nav-icon" src="images/tshirt.png" alt="">Teams</a>
+      <a class="nav-item" href="players.html"><img class="nav-icon" src="images/group.png" alt="">Players</a>
+      <a class="nav-item" href="matches.html"><img class="nav-icon" src="images/football-field.png" alt="">Matches</a>
+      <a class="nav-item active" href="standings.html"><img class="nav-icon" src="images/podium.png" alt="">Standings</a>
+    </nav>
+  </aside>
+
+  <div class="content-wrapper">
+    <main class="main-content">
+      <header class="content-header">
+        <h1>STANDINGS</h1>
+        <div class="date-display">STANDINGS — BUNDESLIGA 2025/26</div>
+      </header>
+
+      <nav class="league-tabs-nav">
+        <a href="standings.html" class="league-tab-link">Premier League</a>
+        <a href="standings-laliga.html" class="league-tab-link">La Liga</a>
+        <a href="standings-seriea.html" class="league-tab-link">Serie A</a>
+        <a href="standings-bundesliga.html" class="league-tab-link active">Bundesliga</a>
+        <a href="standings-ligue1.html" class="league-tab-link">Ligue 1</a>
+      </nav>
+
+      <div class="standings-container-card">
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th class="col-rank">POS</th>
+              <th class="col-team">Team</th>
+              <th class="col-stat">P</th>
+              <th class="col-stat">W</th>
+              <th class="col-stat">D</th>
+              <th class="col-stat">L</th>
+              <th class="col-stat mobile-hide">GD</th>
+              <th class="col-pts">PTS</th>
+              <th class="col-form mobile-hide">Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="pos-ucl">
+              <td class="rank-number">1</td>
+              <td><div class="table-team-info"><img src="images/bayern.svg" class="table-club-badge" alt=""><span class="table-team-name">Bayern Munich</span></div></td>
+              <td>34</td><td>25</td><td>6</td><td>3</td><td class="mobile-hide">+61</td><td class="pts-number">81</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-ucl">
+              <td class="rank-number">2</td>
+              <td><div class="table-team-info"><img src="images/leverkusen.svg" class="table-club-badge" alt=""><span class="table-team-name">Bayer Leverkusen</span></div></td>
+              <td>34</td><td>22</td><td>7</td><td>5</td><td class="mobile-hide">+41</td><td class="pts-number">73</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-ucl">
+              <td class="rank-number">3</td>
+              <td><div class="table-team-info"><img src="images/leipzig.svg" class="table-club-badge" alt=""><span class="table-team-name">RB Leipzig</span></div></td>
+              <td>34</td><td>20</td><td>8</td><td>6</td><td class="mobile-hide">+34</td><td class="pts-number">68</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr class="pos-ucl">
+              <td class="rank-number">4</td>
+              <td><div class="table-team-info"><img src="images/dortmund.svg" class="table-club-badge" alt=""><span class="table-team-name">Borussia Dortmund</span></div></td>
+              <td>34</td><td>19</td><td>7</td><td>8</td><td class="mobile-hide">+28</td><td class="pts-number">64</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-uel">
+              <td class="rank-number">5</td>
+              <td><div class="table-team-info"><img src="images/stuttgart.svg" class="table-club-badge" alt=""><span class="table-team-name">VfB Stuttgart</span></div></td>
+              <td>34</td><td>18</td><td>6</td><td>10</td><td class="mobile-hide">+19</td><td class="pts-number">60</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr class="pos-uel">
+              <td class="rank-number">6</td>
+              <td><div class="table-team-info"><img src="images/frankfurt.svg" class="table-club-badge" alt=""><span class="table-team-name">Eintracht Frankfurt</span></div></td>
+              <td>34</td><td>15</td><td>11</td><td>8</td><td class="mobile-hide">+12</td><td class="pts-number">56</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr class="pos-uel">
+              <td class="rank-number">7</td>
+              <td><div class="table-team-info"><img src="images/freiburg.svg" class="table-club-badge" alt=""><span class="table-team-name">SC Freiburg</span></div></td>
+              <td>34</td><td>14</td><td>8</td><td>12</td><td class="mobile-hide">+2</td><td class="pts-number">50</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-uecl">
+              <td class="rank-number">8</td>
+              <td><div class="table-team-info"><img src="images/hoffenheim.svg" class="table-club-badge" alt=""><span class="table-team-name">TSG Hoffenheim</span></div></td>
+              <td>34</td><td>13</td><td>9</td><td>12</td><td class="mobile-hide">-1</td><td class="pts-number">48</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">9</td>
+              <td><div class="table-team-info"><img src="images/bremen.svg" class="table-club-badge" alt=""><span class="table-team-name">Werder Bremen</span></div></td>
+              <td>34</td><td>12</td><td>10</td><td>12</td><td class="mobile-hide">+1</td><td class="pts-number">46</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">10</td>
+              <td><div class="table-team-info"><img src="images/monchengladbach.svg" class="table-club-badge" alt=""><span class="table-team-name">Mönchengladbach</span></div></td>
+              <td>34</td><td>11</td><td>10</td><td>13</td><td class="mobile-hide">-4</td><td class="pts-number">43</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">11</td>
+              <td><div class="table-team-info"><img src="images/heidenheim.svg" class="table-club-badge" alt=""><span class="table-team-name">FC Heidenheim</span></div></td>
+              <td>34</td><td>10</td><td>12</td><td>12</td><td class="mobile-hide">-5</td><td class="pts-number">42</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">12</td>
+              <td><div class="table-team-info"><img src="images/wolfsburg.svg" class="table-club-badge" alt=""><span class="table-team-name">VfL Wolfsburg</span></div></td>
+              <td>34</td><td>10</td><td>9</td><td>15</td><td class="mobile-hide">-8</td><td class="pts-number">39</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">13</td>
+              <td><div class="table-team-info"><img src="images/augsburg.svg" class="table-club-badge" alt=""><span class="table-team-name">FC Augsburg</span></div></td>
+              <td>34</td><td>9</td><td>9</td><td>16</td><td class="mobile-hide">-14</td><td class="pts-number">36</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">14</td>
+              <td><div class="table-team-info"><img src="images/mainz.svg" class="table-club-badge" alt=""><span class="table-team-name">Mainz 05</span></div></td>
+              <td>34</td><td>8</td><td>11</td><td>15</td><td class="mobile-hide">-16</td><td class="pts-number">35</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">15</td>
+              <td><div class="table-team-info"><img src="images/berlin.svg" class="table-club-badge" alt=""><span class="table-team-name">Union Berlin</span></div></td>
+              <td>34</td><td>7</td><td>11</td><td>16</td><td class="mobile-hide">-19</td><td class="pts-number">32</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr class="pos-playoff">
+              <td class="rank-number">16</td>
+              <td><div class="table-team-info"><img src="images/pauli.svg" class="table-club-badge" alt=""><span class="table-team-name">FC St. Pauli</span></div></td>
+              <td>34</td><td>6</td><td>11</td><td>17</td><td class="mobile-hide">-25</td><td class="pts-number">29</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr class="pos-relegation">
+              <td class="rank-number">17</td>
+              <td><div class="table-team-info"><img src="images/bochum.svg" class="table-club-badge" alt=""><span class="table-team-name">VfL Bochum</span></div></td>
+              <td>34</td><td>5</td><td>10</td><td>19</td><td class="mobile-hide">-34</td><td class="pts-number">25</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr class="pos-relegation">
+              <td class="rank-number">18</td>
+              <td><div class="table-team-info"><img src="images/kiel.svg" class="table-club-badge" alt=""><span class="table-team-name">Holstein Kiel</span></div></td>
+              <td>34</td><td>4</td><td>8</td><td>22</td><td class="mobile-hide">-43</td><td class="pts-number">20</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-legend-container">
+        <div class="legend-item"><span class="legend-box ucl-box"></span> UEFA Champions League qualification</div>
+        <div class="legend-item"><span class="legend-box uel-box"></span> UEFA Europa League qualification</div>
+        <div class="legend-item"><span class="legend-box uecl-box"></span> UEFA Conference League qualification</div>
+        <div class="legend-item"><span class="legend-box relegation-box"></span> Relegation to 2. Bundesliga</div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <p>© Lorin Luca 2026</p>
+    </footer>
+  </div>
+</body>
+</html>

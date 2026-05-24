@@ -1,28 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kickoff</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-     <aside class="sidebar">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
       <div class="sidebar-logo">
-        <div class="logo-icon"><img src="images/football.png" alt=""></div>
-        <div class="logo-text">KICKOFF</div>
+        <a href="index.html" class="logo-link">
+          <div class="logo-icon"><img src="images/football.png" alt="" /></div>
+          <div class="logo-text">KICKOFF</div>
+        </a>
       </div>
 
-     <nav class="sidebar-nav">
-        <a class="nav-item " href="index.html"><img class="nav-icon" src="images/newspaper-folded.png" alt="">News</a>
-        <a class="nav-item" href="leagues.html"><img class="nav-icon" src="images/trophy.png" alt="">Leagues</a>
-        <a class="nav-item" href="teams.html"><img class="nav-icon" src="images/tshirt.png" alt="">Teams</a>
-        <a class="nav-item" href="players.html"><img class="nav-icon" src="images/group.png" alt="">Players</a>
-        <a class="nav-item active" href="matches.html"><img class="nav-icon" src="images/football-field.png" alt="">Matches</a>
-        <a class="nav-item" href="standings.html"><img class="nav-icon" src="images/podium.png" alt="">Standings</a>
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="index.html"
+          ><img
+            class="nav-icon"
+            src="images/newspaper-folded.png"
+            alt=""
+          />News</a
+        >
+        <a class="nav-item" href="leagues.html"
+          ><img class="nav-icon" src="images/trophy.png" alt="" />Leagues</a
+        >
+        <a class="nav-item" href="teams.html"
+          ><img class="nav-icon" src="images/tshirt.png" alt="" />Teams</a
+        >
+        <a class="nav-item" href="players.html"
+          ><img class="nav-icon" src="images/group.png" alt="" />Players</a
+        >
+        <a class="nav-item active" href="matches.html"
+          ><img
+            class="nav-icon"
+            src="images/football-field.png"
+            alt=""
+          />Matches</a
+        >
+        <a class="nav-item" href="standings.html"
+          ><img class="nav-icon" src="images/podium.png" alt="" />Standings</a
+        >
       </nav>
     </aside>
 
-</body>
+    <div class="content-wrapper">
+      <main class="main-content">
+        <header class="content-header">
+          <h1>MATCHES</h1>
+          <div class="date-display">SATURDAY, MAY 16, 2026</div>
+        </header>
+
+        <div class="matches-page-layout">
+          
+          <div class="matches-left-column">
+            <div class="matches-list-container">
+              
+              <div class="match-fixture-card">
+                <div class="match-card-header">
+                  <span class="match-time-stamp">June 4, 2026 • 18:00</span>
+                  <span class="match-status-badge status-scheduled">Scheduled</span>
+                </div>
+                <div class="match-card-body">
+                  <div class="match-team team-home">
+                    <div class="match-badge-placeholder">
+                      <img src="/images/barcelona.svg " style="width: 100%; height: 100%" alt="FC Barcelona" />
+                    </div>
+                    <span class="match-team-name">FC Barcelona</span>
+                  </div>
+                  <div class="match-center-score score-vs">VS</div>
+                  <div class="match-team team-away">
+                    <span class="match-team-name">Atlético Madrid</span>
+                    <div class="match-badge-placeholder">
+                      <img src="/images/atletico.svg" style="width: 100%; height: 100%" alt="Atlético Madrid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="match-card-footer">
+                  <span class="match-stadium-name">Spotify Camp Nou</span>
+                </div>
+              </div>
+
+              <div class="match-fixture-card">
+                <div class="match-card-header">
+                  <span class="match-time-stamp">June 3, 2026 • 15:00</span>
+                  <span class="match-status-badge status-scheduled">Scheduled</span>
+                </div>
+                <div class="match-card-body">
+                  <div class="match-team team-home">
+                    <div class="match-badge-placeholder">
+                      <img src="/images/arsenal.svg" style="width: 100%; height: 100%" alt="Arsenal" />
+                    </div>
+                    <span class="match-team-name">Arsenal</span>
+                  </div>
+                  <div class="match-center-score score-vs">VS</div>
+                  <div class="match-team team-away">
+                    <span class="match-team-name">Liverpool</span>
+                    <div class="match-badge-placeholder">
+                      <img src="/images/liverpool-logo.webp" style="width: 100%; height: 100%" alt="Liverpool" />
+                    </div>
+                  </div>
+                </div>
+                <div class="match-card-footer">
+                  <span class="match-stadium-name">Emirates Stadium</span>
+                </div>
+              </div>
+
+              <div class="match-fixture-card">
+                <div class="match-card-header">
+                  <span class="match-time-stamp">May 31, 2026 • 20:00</span>
+                  <span class="match-status-badge status-scheduled">Scheduled</span>
+                </div>
+                <div class="match-card-body">
+                  <div class="match-team team-home">
+                    <div class="match-badge-placeholder">
+                      <img src="/images/bayern.svg" style="width: 100%; height: 100%" alt="Bayern Munich" />
+                    </div>
+                    <span class="match-team-name">Bayern Munich</span>
+                  </div>
+                  <div class="match-center-score score-vs">VS</div>
+                  <div class="match-team team-away">
+                    <span class="match-team-name">Inter Milan</span>
+                    <div class="match-badge-placeholder">
+                      <img src="/images/inter.svg" style="width: 100%; height: 100%" alt="Inter Milan" />
+                    </div>
+                  </div>
+                </div>
+                <div class="match-card-footer">
+                  <span class="match-stadium-name">Allianz Arena</span>
+                </div>
+              </div>
+
+              <div class="match-fixture-card">
+                <div class="match-card-header">
+                  <span class="match-time-stamp">May 30, 2026 • 20:00</span>
+                  <span class="match-status-badge status-scheduled">Scheduled</span>
+                </div>
+                <div class="match-card-body">
+                  <div class="match-team team-home">
+                    <div class="match-badge-placeholder">
+                      <img src="/images/manchester-city.svg" style="width: 100%; height: 100%" alt="Manchester City" />
+                    </div>
+                    <span class="match-team-name">Manchester City</span>
+                  </div>
+                  <div class="match-center-score score-vs">VS</div>
+                  <div class="match-team team-away">
+                    <span class="match-team-name">Chelsea</span>
+                    <div class="match-badge-placeholder">
+                      <img src="/images/chelsea.svg" style="width: 100%; height: 100%" alt="Chelsea" />
+                    </div>
+                  </div>
+                </div>
+                <div class="match-card-footer">
+                  <span class="match-stadium-name">Etihad</span>
+                </div>
+              </div>
+
+              <div class="match-fixture-card">
+                <div class="match-card-header">
+                  <span class="match-time-stamp">Apr 29, 2026 • 19:00</span>
+                  <span class="match-status-badge status-finished">Finished</span>
+                </div>
+                <div class="match-card-body">
+                  <div class="match-team team-home">
+                    <div class="match-badge-placeholder">
+                      <img src="/images/ac-milan.svg" style="width: 100%; height: 100%" alt="AC Milan" />
+                    </div>
+                    <span class="match-team-name">AC Milan</span>
+                  </div>
+                  <div class="match-center-score score-numbers">2 - 2</div>
+                  <div class="match-team team-away">
+                    <span class="match-team-name">Juventus</span>
+                    <div class="match-badge-placeholder">
+                      <img src="/images/juventus.svg" style="width: 100%; height: 100%" alt="Juventus" />
+                    </div>
+                  </div>
+                </div>
+                <div class="match-card-footer">
+                  <span class="match-stadium-name">Santiago Bernabéu</span>
+                </div>
+              </div>
+
+              <div class="match-fixture-card">
+                <div class="match-card-header">
+                  <span class="match-time-stamp">Apr 26, 2026 • 20:00</span>
+                  <span class="match-status-badge status-finished">Finished</span>
+                </div>
+                <div class="match-card-body">
+                  <div class="match-team team-home">
+                    <div class="match-badge-placeholder">
+                      <img src="/images/real-madrid.svg" style="width: 100%; height: 100%" alt="Real Madrid" />
+                    </div>
+                    <span class="match-team-name">Real Madrid</span>
+                  </div>
+                  <div class="match-center-score score-numbers">2 - 2</div>
+                  <div class="match-team team-away">
+                    <span class="match-team-name">FC Barcelona</span>
+                    <div class="match-badge-placeholder">
+                      <img src="/images/barcelona.svg" style="width: 100%; height: 100%" alt="FC Barcelona" />
+                    </div>
+                  </div>
+                </div>
+                <div class="match-card-footer">
+                  <span class="match-stadium-name">Santiago Bernabéu</span>
+                </div>
+              </div>
+
+            </div> </div> <aside class="matches-stats-sidebar main-scoring-sidebar">
+            <div class="stats-panel-card scoring-full-card">
+              
+              <h3 class="panel-card-title">TOP SCORING TEAMS</h3>
+              
+              <div class="progress-stat-row massive-row">
+                <div class="progress-stat-labels">
+                  <div class="stat-team-info">
+                    <img src="/images/liverpool-logo.webp" class="sidebar-team-badge" alt="" />
+                    <span class="stat-team-label">Liverpool</span>
+                  </div>
+                  <span class="stat-number-label">88 <small>GOALS</small></span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              
+              <div class="progress-stat-row massive-row">
+                <div class="progress-stat-labels">
+                  <div class="stat-team-info">
+                    <img src="/images/manchester-city.svg" class="sidebar-team-badge" alt="" />
+                    <span class="stat-team-label">Manchester City</span>
+                  </div>
+                  <span class="stat-number-label">85 <small>GOALS</small></span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 93%;"></div></div>
+              </div>
+
+              <div class="progress-stat-row massive-row">
+                <div class="progress-stat-labels">
+                  <div class="stat-team-info">
+                    <img src="/images/real-madrid.svg" class="sidebar-team-badge" alt="" />
+                    <span class="stat-team-label">Real Madrid</span>
+                  </div>
+                  <span class="stat-number-label">78 <small>GOALS</small></span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 82%;"></div></div>
+              </div>
+
+              <div class="progress-stat-row massive-row">
+                <div class="progress-stat-labels">
+                  <div class="stat-team-info">
+                    <img src="/images/barcelona.svg" class="sidebar-team-badge" alt="" />
+                    <span class="stat-team-label">FC Barcelona</span>
+                  </div>
+                  <span class="stat-number-label">74 <small>GOALS</small></span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 76%;"></div></div>
+              </div>
+
+              <div class="progress-stat-row massive-row">
+                <div class="progress-stat-labels">
+                  <div class="stat-team-info">
+                    <img src="/images/arsenal.svg" class="sidebar-team-badge" alt="" />
+                    <span class="stat-team-label">Arsenal</span>
+                  </div>
+                  <span class="stat-number-label">69 <small>GOALS</small></span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 68%;"></div></div>
+              </div>
+
+              <div class="progress-stat-row massive-row">
+                <div class="progress-stat-labels">
+                  <div class="stat-team-info">
+                    <img src="/images/bayern.svg" class="sidebar-team-badge" alt="" />
+                    <span class="stat-team-label">Bayern Munich</span>
+                  </div>
+                  <span class="stat-number-label">65 <small>GOALS</small></span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 61%;"></div></div>
+              </div>
+
+            </div>
+          </aside>
+
+        </div> </main>
+      <footer class="main-footer">
+        <p>© Lorin Luca 2026</p>
+      </footer>
+    </div>
+  </body>
 </html>

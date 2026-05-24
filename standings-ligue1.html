@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kickoff - Ligue 1 Standings</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <a href="index.html" class="logo-link">
+        <div class="logo-icon"><img src="images/football.png" alt=""></div>
+        <div class="logo-text">KICKOFF</div>
+      </a>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="index.html"><img class="nav-icon" src="images/newspaper-folded.png" alt="">News</a>
+      <a class="nav-item" href="leagues.html"><img class="nav-icon" src="images/trophy.png" alt="">Leagues</a>
+      <a class="nav-item" href="teams.html"><img class="nav-icon" src="images/tshirt.png" alt="">Teams</a>
+      <a class="nav-item" href="players.html"><img class="nav-icon" src="images/group.png" alt="">Players</a>
+      <a class="nav-item" href="matches.html"><img class="nav-icon" src="images/football-field.png" alt="">Matches</a>
+      <a class="nav-item active" href="standings.html"><img class="nav-icon" src="images/podium.png" alt="">Standings</a>
+    </nav>
+  </aside>
+
+  <div class="content-wrapper">
+    <main class="main-content">
+      <header class="content-header">
+        <h1>STANDINGS</h1>
+        <div class="date-display">STANDINGS — LIGUE 1 2025/26</div>
+      </header>
+
+      <nav class="league-tabs-nav">
+        <a href="standings.html" class="league-tab-link">Premier League</a>
+        <a href="standings-laliga.html" class="league-tab-link">La Liga</a>
+        <a href="standings-seriea.html" class="league-tab-link">Serie A</a>
+        <a href="standings-bundesliga.html" class="league-tab-link">Bundesliga</a>
+        <a href="standings-ligue1.html" class="league-tab-link active">Ligue 1</a>
+      </nav>
+
+      <div class="standings-container-card">
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th class="col-rank">POS</th>
+              <th class="col-team">Team</th>
+              <th class="col-stat">P</th>
+              <th class="col-stat">W</th>
+              <th class="col-stat">D</th>
+              <th class="col-stat">L</th>
+              <th class="col-stat mobile-hide">GD</th>
+              <th class="col-pts">PTS</th>
+              <th class="col-form mobile-hide">Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="pos-ucl">
+              <td class="rank-number">1</td>
+              <td><div class="table-team-info"><img src="images/psg.svg" class="table-club-badge" alt=""><span class="table-team-name">Paris Saint-Germain</span></div></td>
+              <td>34</td><td>24</td><td>6</td><td>4</td><td class="mobile-hide">+48</td><td class="pts-number">78</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-ucl">
+              <td class="rank-number">2</td>
+              <td><div class="table-team-info"><img src="images/monaco.svg" class="table-club-badge" alt=""><span class="table-team-name">AS Monaco</span></div></td>
+              <td>34</td><td>20</td><td>7</td><td>7</td><td class="mobile-hide">+29</td><td class="pts-number">67</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr class="pos-ucl">
+              <td class="rank-number">3</td>
+              <td><div class="table-team-info"><img src="images/marseille.svg" class="table-club-badge" alt=""><span class="table-team-name">Olympique de Marseille</span></div></td>
+              <td>34</td><td>19</td><td>8</td><td>7</td><td class="mobile-hide">+24</td><td class="pts-number">65</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-ucl">
+              <td class="rank-number">4</td>
+              <td><div class="table-team-info"><img src="images/lille.svg" class="table-club-badge" alt=""><span class="table-team-name">Lille OSC</span></div></td>
+              <td>34</td><td>17</td><td>10</td><td>7</td><td class="mobile-hide">+21</td><td class="pts-number">61</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr class="pos-uel">
+              <td class="rank-number">5</td>
+              <td><div class="table-team-info"><img src="images/lyon.svg" class="table-club-badge" alt=""><span class="table-team-name">Olympique Lyonnais</span></div></td>
+              <td>34</td><td>16</td><td>9</td><td>9</td><td class="mobile-hide">+13</td><td class="pts-number">57</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f loss">L</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-uel">
+              <td class="rank-number">6</td>
+              <td><div class="table-team-info"><img src="images/nice.svg" class="table-club-badge" alt=""><span class="table-team-name">OGC Nice</span></div></td>
+              <td>34</td><td>15</td><td>10</td><td>9</td><td class="mobile-hide">+11</td><td class="pts-number">55</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr class="pos-uecl">
+              <td class="rank-number">7</td>
+              <td><div class="table-team-info"><img src="images/lens.svg" class="table-club-badge" alt=""><span class="table-team-name">RC Lens</span></div></td>
+              <td>34</td><td>14</td><td>11</td><td>9</td><td class="mobile-hide">+12</td><td class="pts-number">53</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">8</td>
+              <td><div class="table-team-info"><img src="images/reims.svg" class="table-club-badge" alt=""><span class="table-team-name">Stade de Reims</span></div></td>
+              <td>34</td><td>13</td><td>9</td><td>12</td><td class="mobile-hide">+2</td><td class="pts-number">48</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">9</td>
+              <td><div class="table-team-info"><img src="images/rennes.svg" class="table-club-badge" alt=""><span class="table-team-name">Stade Rennais</span></div></td>
+              <td>34</td><td>12</td><td>10</td><td>12</td><td class="mobile-hide">0</td><td class="pts-number">46</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f win">W</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">10</td>
+              <td><div class="table-team-info"><img src="images/strasbourg.svg" class="table-club-badge" alt=""><span class="table-team-name">RC Strasbourg</span></div></td>
+              <td>34</td><td>11</td><td>10</td><td>13</td><td class="mobile-hide">-5</td><td class="pts-number">43</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">11</td>
+              <td><div class="table-team-info"><img src="images/brest.svg" class="table-club-badge" alt=""><span class="table-team-name">Stade Brestois</span></div></td>
+              <td>34</td><td>11</td><td>9</td><td>14</td><td class="mobile-hide">-6</td><td class="pts-number">42</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">12</td>
+              <td><div class="table-team-info"><img src="images/toulouse.svg" class="table-club-badge" alt=""><span class="table-team-name">Toulouse FC</span></div></td>
+              <td>34</td><td>10</td><td>10</td><td>14</td><td class="mobile-hide">-8</td><td class="pts-number">40</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">13</td>
+              <td><div class="table-team-info"><img src="images/nantes.svg" class="table-club-badge" alt=""><span class="table-team-name">FC Nantes</span></div></td>
+              <td>34</td><td>9</td><td>10</td><td>15</td><td class="mobile-hide">-11</td><td class="pts-number">37</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f win">W</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">14</td>
+              <td><div class="table-team-info"><img src="images/auxerre.svg" class="table-club-badge" alt=""><span class="table-team-name">AJ Auxerre</span></div></td>
+              <td>34</td><td>8</td><td>11</td><td>15</td><td class="mobile-hide">-14</td><td class="pts-number">35</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr>
+              <td class="rank-number">15</td>
+              <td><div class="table-team-info"><img src="images/montpellier.svg" class="table-club-badge" alt=""><span class="table-team-name">Montpellier HSC</span></div></td>
+              <td>34</td><td>8</td><td>9</td><td>17</td><td class="mobile-hide">-18</td><td class="pts-number">33</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f win">W</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr class="pos-playoff">
+              <td class="rank-number">16</td>
+              <td><div class="table-team-info"><img src="images/etienne.svg" class="table-club-badge" alt=""><span class="table-team-name">AS Saint-Étienne</span></div></td>
+              <td>34</td><td>7</td><td>11</td><td>16</td><td class="mobile-hide">-22</td><td class="pts-number">32</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+            <tr class="pos-relegation">
+              <td class="rank-number">17</td>
+              <td><div class="table-team-info"><img src="images/havre.svg" class="table-club-badge" alt=""><span class="table-team-name">Le Havre AC</span></div></td>
+              <td>34</td><td>6</td><td>9</td><td>19</td><td class="mobile-hide">-29</td><td class="pts-number">27</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f win">W</span><span class="badge-f draw">D</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f loss">L</span></div></td>
+            </tr>
+            <tr class="pos-relegation">
+              <td class="rank-number">18</td>
+              <td><div class="table-team-info"><img src="images/angers.svg" class="table-club-badge" alt=""><span class="table-team-name">Angers SCO</span></div></td>
+              <td>34</td><td>4</td><td>9</td><td>21</td><td class="mobile-hide">-38</td><td class="pts-number">21</td>
+              <td class="mobile-hide"><div class="form-wrapper"><span class="badge-f loss">L</span><span class="badge-f loss">L</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span><span class="badge-f draw">D</span></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-legend-container">
+        <div class="legend-item"><span class="legend-box ucl-box"></span> UEFA Champions League qualification</div>
+        <div class="legend-item"><span class="legend-box uel-box"></span> UEFA Europa League qualification</div>
+        <div class="legend-item"><span class="legend-box uecl-box"></span> UEFA Conference League qualification</div>
+        <div class="legend-item"><span class="legend-box relegation-box"></span> Relegation to Ligue 2</div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <p>© Lorin Luca 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
