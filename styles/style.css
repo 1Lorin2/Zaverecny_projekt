@@ -48,22 +48,20 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: none; /* Removes any default underlines */
+  text-decoration: none;
   width: 100%;
 }
 
-/* Optional: Gives a subtle hover effect so the user knows it's a link */
 .logo-link:hover .logo-text {
-  color: #f0c419; /* Makes the text turn yellow on hover */
+  color: #f0c419;
   transition: color 0.2s ease;
 }
 
 .logo-link:hover .logo-icon img {
-  transform: rotate(15deg); /* Slightly spins the football icon for fun */
+  transform: rotate(15deg);
   transition: transform 0.2s ease;
 }
 
-/* Smooth reset when mouse leaves */
 .logo-text,
 .logo-icon img {
   transition: all 0.2s ease;
@@ -112,19 +110,19 @@ body {
 }
 
 .content-wrapper {
-  margin-left: 220px; /* Protects your layout from the 220px sidebar */
+  margin-left: 220px;
   min-height: 100vh;
   flex-grow: 1;
-  /* Grid Setup */
+
   display: grid;
-  grid-template-rows: 1fr auto; /* Content fills the top space, footer sits naturally below it */
+  grid-template-rows: 1fr auto;
 }
 
 .main-footer {
   width: 100%;
   text-align: center;
   padding: 40px 0;
-  background-color: #1a1f1a; /* Your dark footer background color */
+  background-color: #1a1f1a;
   border-top: 1px solid #e0e2db;
 }
 
@@ -192,24 +190,23 @@ body {
   font-size: 20px;
   letter-spacing: 1px;
   cursor: pointer;
-  border-radius: 4px; /* Slight rounding looks more modern than sharp corners */
+  border-radius: 4px;
   margin-top: 15px;
 
-  /* The "Kickoff" Look */
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 4px 0 #c29d14; /* A darker yellow bottom border for a 3D effect */
+  box-shadow: 0 4px 0 #c29d14;
 }
 
 .read-btn:hover {
-  background: #ffcf21; /* Slightly brighter yellow on hover */
-  transform: translateY(-2px); /* Lifts the button up slightly */
-  box-shadow: 0 6px 0 #c29d14; /* Increases the shadow as it lifts */
+  background: #ffcf21;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #c29d14;
 }
 
 .read-btn:active {
-  transform: translateY(2px); /* Pushes the button down when clicked */
-  box-shadow: 0 2px 0 #c29d14; /* Shrinks shadow to look "pressed" */
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #c29d14;
 }
 
 .news-flex-container {
@@ -227,10 +224,8 @@ body {
 }
 
 .news-card:hover {
-  /* Simple scale: 1.03 means make it 3% bigger when the mouse hovers */
   transform: scale(1.03);
 
-  /* Changes cursor to a hand pointer */
   cursor: pointer;
 }
 
@@ -250,9 +245,9 @@ body {
 }
 
 .card-img-container {
-  height: 200px; /* Give it a bit more height */
+  height: 200px;
   width: 100%;
-  position: relative; /* Necessary for the text overlay */
+  position: relative;
   overflow: hidden;
 }
 
@@ -260,11 +255,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* CHANGE THIS to adjust what part of the photo we see */
+
   object-position: center;
 }
 
-/* Add a dark gradient so the white text is readable on the image */
 .card-img-container::after {
   content: '';
   position: absolute;
@@ -279,25 +273,22 @@ body {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  z-index: 2; /* Keeps text above the gradient */
+  z-index: 2;
   color: white;
 }
 
 .ronaldo-pos {
-  object-position: center 10%; /* Shifts the focus up so we see his face */
+  object-position: center 10%;
 }
 
 .alonso-pos {
-  /* Keeps the focus on his face/upper torso depending on the landscape photo */
   object-position: center 15%;
 }
 
-/* Centers Ronaldo looking disappointed on the pitch */
 .ronaldo-acl-pos {
   object-position: center 15%;
 }
 
-/* Captures the emotional wave or applause from Lewandowski */
 .lewa-pos {
   object-position: center 25%;
 }
@@ -306,14 +297,12 @@ body {
   object-position: center 15%;
 }
 
-/* --- LEAGUES DASHBOARD LAYOUT --- */
-
 .leagues-hero {
   position: relative;
-  min-height: 340px; /* Changed from height: 320px to give it breathing room */
+  min-height: 340px;
   background:
     linear-gradient(rgba(26, 31, 26, 0.55), rgba(26, 31, 26, 0.75)),
-    /* Lightened gradients slightly */ url('../images/field.png') center/cover;
+    url('../images/field.png') center/cover;
   border-radius: 12px;
   padding: 40px;
   display: flex;
@@ -395,7 +384,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Also ensure your wrapper hides the cropped parts */
 .hero-logo-circle {
   width: 95px;
   height: 95px;
@@ -406,28 +394,23 @@ body {
   justify-content: center;
   flex-shrink: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* ADD THIS: Clips the overlapping purple edges of the rectangular image */
+
   overflow: hidden;
-  /* FIX 1: Add tiny padding so the image doesn't touch the absolute pixel edge of the circle */
+
   padding: 8px;
 }
 
-/* Update your hero image selector to this */
 .hero-circle-img {
   width: 100%;
   height: 100%;
 
-  /* CHANGE THIS: Forces the image to fill the circle completely */
   object-fit: contain;
 
-  /* Centers the lion face perfectly */
   object-position: center;
 
-  /* FIX 2: Makes the image border render with round clipping smoothly */
   border-radius: 50%;
 }
 
-/* CARDS DASHBOARD GRID */
 .leagues-dashboard-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -447,14 +430,13 @@ body {
 }
 
 .card-header-block {
-  padding: 24px 20px; /* Increased vertical padding to make the header taller */
+  padding: 24px 20px;
   color: white;
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* Custom Header Colors matching your look */
 .pl-theme {
   background: linear-gradient(135deg, #3d195a, #240b36);
 }
@@ -464,7 +446,7 @@ body {
 .bundes-theme {
   background: linear-gradient(135deg, #323232, #1f1f1f);
 }
-/* Custom Header Gradients for the new additions */
+
 .seriea-theme {
   background: linear-gradient(135deg, #0052cc, #002266);
 }
@@ -489,8 +471,8 @@ body {
 }
 
 .header-icon-circle {
-  width: 55px; /* Bumped up from 40px to make the logo circle much bigger */
-  height: 55px; /* Bumped up from 40px */
+  width: 55px;
+  height: 55px;
   background: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -498,24 +480,21 @@ body {
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  padding: 6px; /* Slightly more padding so the logo fits comfortably inside */
+  padding: 6px;
 }
 
-/* Controls the logo image inside the card header circle */
 .card-header-img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Changed to contain so logos don't get cut off at the edges */
+  object-fit: contain;
   object-position: center;
 }
 
-/* Change the white circle to Bundesliga Red just for this card */
 .bundes-theme .header-icon-circle {
-  background: #d41f25; /* Exact Bundesliga official red */
-  padding: 0px; /* Removes padding so the red image blends seamlessly */
+  background: #d41f25;
+  padding: 0px;
 }
 
-/* Force the image to blend into the new red background background */
 .bundes-theme .card-header-img {
   object-fit: contain;
   object-position: center;
@@ -525,14 +504,14 @@ body {
 
 .header-text-block h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 24px; /* Bumped up from 20px to match the bigger card feel */
+  font-size: 24px;
   letter-spacing: 0.5px;
   margin: 0;
   line-height: 1.1;
 }
 
 .header-text-block p {
-  font-size: 12px; /* Slightly larger country text */
+  font-size: 12px;
   font-weight: 700;
   opacity: 0.7;
   margin: 0;
@@ -547,7 +526,7 @@ body {
 .mini-stat {
   flex: 1;
   text-align: center;
-  padding: 18px 10px; /* Taller padding makes the center section feel larger */
+  padding: 18px 10px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #f0f0f0;
@@ -558,7 +537,7 @@ body {
 }
 
 .mini-stat strong {
-  font-size: 18px; /* Slightly larger numbers */
+  font-size: 18px;
   color: #1a1f1a;
 }
 
@@ -620,14 +599,12 @@ body {
   color: #1a1f1a;
 }
 
-/*Teams LAYOUT*/
 .teams-hero {
   position: relative;
-  min-height: 340px; /* Changed from height: 320px to give it breathing room */
+  min-height: 340px;
   background:
     linear-gradient(rgba(26, 31, 26, 0.55), rgba(26, 31, 26, 0.75)),
-    /* Lightened gradients slightly */ url('../images/liverpool-champions.jpg')
-      center 25% / cover;
+    url('../images/liverpool-champions.jpg') center 25% / cover;
   border-radius: 12px;
   padding: 40px;
   display: flex;
@@ -671,13 +648,11 @@ body {
   background: linear-gradient(135deg, #f473b9 0%, #111317 100%);
 }
 
-/*PLAYERS PAGE*/
 .players-hero {
   position: relative;
-  min-height: 340px; /* Changed from height: 320px to give it breathing room */
+  min-height: 340px;
   background:
     linear-gradient(rgba(26, 31, 26, 0.55), rgba(26, 31, 26, 0.75)),
-    /* Lightened gradients slightly */
     url('../images/cristiano-ronaldo-background.jpg') center 42% / cover;
   border-radius: 12px;
   padding: 40px;
@@ -688,8 +663,8 @@ body {
   margin-bottom: 40px;
 }
 .players-header-icon-circle {
-  width: 100px; /* Bumped up from 40px to make the logo circle much bigger */
-  height: 100px; /* Bumped up from 40px */
+  width: 100px;
+  height: 100px;
   background: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -702,31 +677,23 @@ body {
 .player-avatar-box {
   width: 80px;
   height: 80px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.15
-  ); /* Translucent white looks premium over gradients */
-  border: 1px solid rgba(255, 255, 255, 0.25); /* Subtle inner border line */
-  border-radius: 8px; /* Smooth rounded corners for the box frame */
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
   display: flex;
-  align-items: flex-end; /* Keeps the cutout sitting on the bottom line of the box */
+  align-items: flex-end;
   justify-content: center;
-  overflow: hidden; /* Clips any image parts that bleed outside the box */
-  flex-shrink: 0; /* Prevents the box from squeezing on small screens */
+  overflow: hidden;
+  flex-shrink: 0;
   padding-top: 5px;
 }
 
-/* Ensure the cutout image resizes inside the box frame perfectly */
 .player-avatar-box .card-header-img {
   width: auto;
   height: 100%;
   object-fit: contain;
   display: block;
 }
-
-/* HRAC - STATISTIKA */
 
 .profile-breadcrumb {
   margin-bottom: 15px;
@@ -745,7 +712,6 @@ body {
   color: #1a1f1a;
 }
 
-/* Hero Profiler Card Header */
 .profile-hero-card {
   position: relative;
   border-radius: 12px;
@@ -791,7 +757,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* Quick Pills Header Row */
 .profile-hero-quick-stats {
   display: flex;
   gap: 15px;
@@ -828,7 +793,6 @@ body {
   color: #1a1f1a;
 }
 
-/* Giant background decorative text */
 .profile-shirt-watermark {
   position: absolute;
   right: 40px;
@@ -841,7 +805,6 @@ body {
   user-select: none;
 }
 
-/* Structural Two-Column Grid Setup */
 .profile-details-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -856,7 +819,6 @@ body {
   gap: 25px;
 }
 
-/* Individual Content Module Containers */
 .profile-section-card {
   background: white;
   border-radius: 12px;
@@ -885,7 +847,6 @@ body {
   color: #666;
 }
 
-/* Grid Layout for Season 8-cell metric blocks */
 .overview-stats-box-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -920,7 +881,6 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* Horizontal Performance Rating Bars Layout */
 .ratings-bar-list {
   display: flex;
   flex-direction: column;
@@ -968,7 +928,6 @@ body {
   color: #1a1f1a;
 }
 
-/* Premium Structured Data Tables */
 .table-responsive-wrapper {
   overflow-x: auto;
   width: 100%;
@@ -1000,7 +959,6 @@ body {
   border-bottom: none;
 }
 
-/* Match result badge styles */
 .result-pill {
   font-size: 11px;
   font-weight: 700;
@@ -1042,7 +1000,6 @@ body {
   color: #ffffff;
 }
 
-/* Right Sidebar Data Rows */
 .info-sidebar-list {
   display: flex;
   flex-direction: column;
@@ -1077,7 +1034,6 @@ body {
   color: #116936;
 }
 
-/* SVG Radar Diagram Styling Rules */
 .radar-container {
   display: flex;
   justify-content: center;
@@ -1109,7 +1065,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Trophy Items Layout styling */
 .trophy-item-row {
   display: flex;
   justify-content: space-between;
@@ -1236,8 +1191,6 @@ body {
     url('../images/villarreal-win.jpg') center 45% / cover;
 }
 
-/* Zapasy */
-/* --- Matches Layout Heading Section --- */
 .matches-page-header {
   display: flex;
   justify-content: space-between;
@@ -1263,12 +1216,11 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* --- Individual Matches Container Boxes --- */
 .matches-list-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 1000px; /* Aligns comfortably with the rest of your UI boxes */
+  max-width: 1000px;
 }
 
 .match-fixture-card {
@@ -1309,7 +1261,6 @@ body {
   color: #065f46;
 }
 
-/* --- Center Row Grid containing Teams & Scores --- */
 .match-card-body {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -1344,7 +1295,6 @@ body {
   color: #111827;
 }
 
-/* --- Score Column Variants --- */
 .match-center-score {
   min-width: 100px;
   text-align: center;
@@ -1365,7 +1315,6 @@ body {
   letter-spacing: 4px;
 }
 
-/* --- Bottom Card Stadium row --- */
 .match-card-footer {
   text-align: center;
   padding-top: 8px;
@@ -1376,7 +1325,7 @@ body {
   color: #9ca3af;
   font-weight: 500;
 }
-/* Layout Wrapper Alignment */
+
 .matches-page-layout {
   display: flex;
   gap: 32px;
@@ -1390,9 +1339,8 @@ body {
   flex: 1;
 }
 
-/* Bigger Sized Sidebar */
 .main-scoring-sidebar {
-  width: 360px; /* Increased width for a cleaner, bolder look */
+  width: 360px;
   flex-shrink: 0;
 }
 
@@ -1413,7 +1361,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* Rows & Progress Bars */
 .massive-row {
   margin-bottom: 20px;
 }
@@ -1459,7 +1406,6 @@ body {
   margin-left: 2px;
 }
 
-/* Progress Fills */
 .progress-bar-bg {
   width: 100%;
   height: 8px;
@@ -1470,18 +1416,16 @@ body {
 
 .progress-bar-fill {
   height: 100%;
-  background-color: #064e3b; /* Dark athletic green */
+  background-color: #064e3b;
   border-radius: 6px;
   transition: width 0.4s ease;
 }
-/* --- STANDINGS PAGE STYLES --- */
 
-/* League Links Bar */
 .league-tabs-nav {
   display: flex;
   gap: 12px;
   margin-bottom: 24px;
-  overflow-x: auto; /* Adds a clean swipe scrollbar on small devices if tabs overflow */
+  overflow-x: auto;
   padding-bottom: 4px;
 }
 
@@ -1490,12 +1434,12 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #4b5563; /* Medium grey */
+  color: #4b5563;
   background-color: #f3f4f6;
   padding: 10px 18px;
   border-radius: 30px;
   transition: all 0.2s ease;
-  white-space: nowrap; /* Keeps tabs from wrapping ugly */
+  white-space: nowrap;
 }
 
 .league-tab-link:hover {
@@ -1504,17 +1448,16 @@ body {
 }
 
 .league-tab-link.active {
-  background-color: #064e3b; /* Athletic dark green */
+  background-color: #064e3b;
   color: #ffffff;
 }
 
-/* Standings Card Panel */
 .standings-container-card {
   background: #ffffff;
   border: 1px solid #eaecef;
   border-radius: 16px;
   padding: 8px;
-  overflow-x: auto; /* Protects mobile layouts if tables extend too far */
+  overflow-x: auto;
 }
 
 .standings-table {
@@ -1524,7 +1467,6 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
-/* Table Header Formatting */
 .standings-table th {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1535,7 +1477,6 @@ body {
   border-bottom: 1px solid #f3f4f6;
 }
 
-/* Table Body Cell Formatting */
 .standings-table td {
   padding: 14px 12px;
   font-size: 0.95rem;
@@ -1545,15 +1486,13 @@ body {
 }
 
 .standings-table tr:last-child td {
-  border-bottom: none; /* Keeps bottom corner radius neat */
+  border-bottom: none;
 }
 
-/* Row Hover Interaction */
 .standings-table tbody tr:hover {
   background-color: #f9fafb;
 }
 
-/* Specific Columns Configuration */
 .col-rank {
   width: 50px;
   text-align: center;
@@ -1589,7 +1528,7 @@ body {
   text-align: center;
 }
 .standings-table td:nth-child(n + 3) {
-  text-align: center; /* Centers all numerical stat data cells automatically */
+  text-align: center;
 }
 
 .col-pts {
@@ -1601,21 +1540,20 @@ body {
   color: #111827;
 }
 
-/* European Qualification Borders (Left edge indicator strips) */
 .pos-ucl td:first-child {
-  border-left: 4px solid #3b82f6; /* Blue for Champions League */
+  border-left: 4px solid #3b82f6;
 }
 .pos-uel td:first-child {
-  border-left: 4px solid #f59e0b; /* Orange for Europa League */
+  border-left: 4px solid #f59e0b;
 }
 .pos-uecl td:first-child {
-  border-left: 4px solid #22c55e; /* Vibrant Green indicator */
+  border-left: 4px solid #22c55e;
 }
-/* Relegation Zone Side Strip */
+
 .pos-relegation td:first-child {
-  border-left: 4px solid #ef4444; /* Clean Red indicator for Relegation */
+  border-left: 4px solid #ef4444;
 }
-/* --- FORM MATCH BADGES --- */
+
 .col-form {
   width: 150px;
   text-align: center;
@@ -1642,15 +1580,14 @@ body {
 
 .badge-f.win {
   background-color: #10b981;
-} /* Emerald Green */
+}
 .badge-f.draw {
   background-color: #6b7280;
-} /* Slate Grey */
+}
 .badge-f.loss {
   background-color: #ef4444;
-} /* Crimson Red */
+}
 
-/* --- LEAGUE LEGEND BLOCK --- */
 .table-legend-container {
   display: flex;
   flex-wrap: wrap;
@@ -1687,24 +1624,22 @@ body {
   background-color: #ef4444;
 }
 
-/* --- LAPTOPS & SMALLER MONITORS --- */
 @media (max-width: 1400px) {
   .news-flex-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  /* 1. Reset Content Wrapper Margin to align with the grid */
+
   .content-wrapper {
     margin-left: 80px;
   }
 
-  /* 2. Adjust Sidebar layout */
   .sidebar {
     width: 80px;
-    align-items: center; /* Centers all direct children horizontally */
+    align-items: center;
   }
-  /* 3. Center the Logo Link Container */
+
   .sidebar-logo {
     width: 100%;
     justify-content: center;
@@ -1712,63 +1647,58 @@ body {
   .logo-link {
     justify-content: center;
   }
-  /* Completely HIDE the logo text 'KICKOFF' */
+
   .logo-text {
     display: none;
   }
-  /* Completely HIDE the menu text links (News, Leagues, etc.) */
+
   .nav-item {
-    font-size: 0; /* Keep this to handle accessibility safely */
+    font-size: 0;
   }
 
-  /* HERO CARD - BREAKPOINT 1 (LAPTOPS) */
   .hero-card {
-    height: 450px; /* Bring the height down from 600px so it fits nicely on laptop screens */
-    background-position: center 15%; /* Keeps the main focus of the player perfectly framed */
-    padding: 30px; /* Slightly tighter padding */
+    height: 450px;
+    background-position: center 15%;
+    padding: 30px;
   }
   .hero-card h2 {
-    font-size: 28px; /* Scales down the title so it doesn't wrap into too many lines */
+    font-size: 28px;
     margin: 8px 0;
   }
   .hero-card p {
-    font-size: 14px; /* Makes the description text a bit more compact */
-    max-width: 80%; /* Prevents text from stretching too wide */
+    font-size: 14px;
+    max-width: 80%;
   }
-  /* LEAGUES DASHBOARD - BREAKPOINT 1 (LAPTOPS) */
+
   .leagues-dashboard-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Shifts league grids from 3 columns down to 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .leagues-hero {
-    min-height: 300px; /* Brings height down slightly to match the smaller viewport scale */
+    min-height: 300px;
     padding: 30px;
   }
   .hero-league-title-row h2 {
-    font-size: 38px; /* Scales down the header font so it doesn't break across multiple lines */
+    font-size: 38px;
   }
 
   .hero-logo-circle {
-    width: 80px; /* Slightly scales down the white circle emblem wrapper */
+    width: 80px;
     height: 80px;
   }
 
   .stat-num {
-    font-size: 36px; /* Slightly tighter stats presentation */
+    font-size: 36px;
   }
   .teams-hero {
-    min-height: 300px; /* Brings height down slightly to match the smaller viewport scale */
+    min-height: 300px;
     padding: 30px;
   }
   .players-hero {
-    min-height: 300px; /* Brings hero height down slightly to match laptop scales */
+    min-height: 300px;
     padding: 30px;
   }
 
-  /* Prevent player names on smaller laptop cards from breaking into awkward lines */
   .header-text-block h3 {
     font-size: 20px;
     letter-spacing: 0px;
@@ -1777,117 +1707,113 @@ body {
     font-size: 11px;
   }
   .read-btn {
-    padding: 8px 22px; /* Slightly more compact button size for laptops */
+    padding: 8px 22px;
     font-size: 18px;
   }
   .profile-details-grid {
-    grid-template-columns: 1fr; /* Stacks columns cleanly on laptop and tablets */
+    grid-template-columns: 1fr;
   }
   .matches-page-layout {
-    flex-direction: column; /* Stacks match list and stats vertically */
+    flex-direction: column;
     align-items: stretch;
-    gap: 24px; /* Reduces space between elements */
+    gap: 24px;
   }
 
   .main-scoring-sidebar {
-    width: 100%; /* Sidebar takes full width below the matches */
+    width: 100%;
   }
 
   .main-content {
-    padding: 30px; /* Shrinks page padding slightly */
+    padding: 30px;
   }
 
-  /* Make match cards slightly smaller and more compact */
   .match-fixture-card {
     padding: 16px;
   }
 
   .match-team-name {
-    font-size: 1.1rem; /* Scales down team text size */
+    font-size: 1.1rem;
   }
 
   .match-center-score {
-    font-size: 1.3rem; /* Adapts vs/score text size */
+    font-size: 1.3rem;
   }
-  
 }
 
-/* --- TABLETS & SMALL SCREENS --- */
 @media (max-width: 992px) {
   .news-flex-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  /* HERO CARD - BREAKPOINT 2 (TABLETS/MOBILES) */
+
   .hero-card {
-    height: 380px; /* Safe, beautiful height for smaller viewports */
-    background-position: center 20%; /* Fine-tunes the photo focus */
+    height: 380px;
+    background-position: center 20%;
     padding: 24px;
   }
 
   .hero-card h2 {
-    font-size: 18px; /* Crisp font size that reads cleanly on any phone or tablet */
+    font-size: 18px;
     line-height: 1.1;
   }
 
   .hero-card p {
     font-size: 13px;
-    max-width: 100%; /* Lets the text use the full card width on small screens */
+    max-width: 100%;
   }
 
   .read-btn {
-    padding: 8px 18px; /* Makes the action button slightly more compact */
+    padding: 8px 18px;
     font-size: 18px;
   }
   .card-overlay-content {
     font-size: 12px;
   }
 
-  /* LEAGUES DASHBOARD - BREAKPOINT 2 (TABLETS/MOBILES) */
   .leagues-dashboard-grid {
-    grid-template-columns: 1fr; /* Stacks all league dashboard items into a single, clean column */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
   .leagues-hero {
-    flex-direction: column; /* Force-stacks the left title/description above the stats metrics block */
-    align-items: flex-start; /* Aligns content smoothly to the left side */
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
-    gap: 30px; /* Creates clean breathing room between your text block and stats grid row */
+    gap: 30px;
     padding: 24px;
-    background-position: center; /* Ensures background pitch imagery scales elegantly */
+    background-position: center;
   }
 
   .popular-badge {
-    position: static; /* Removes absolute positioning so it acts as a normal block item */
+    position: static;
     display: inline-block;
     margin-bottom: 12px;
   }
 
   .hero-league-title-row {
-    margin: 0 0 10px 0; /* Tightens text spacing around the header banner titles */
+    margin: 0 0 10px 0;
   }
 
   .hero-league-title-row h2 {
-    font-size: 32px; /* Crisp header title size for standard tablet displays */
+    font-size: 32px;
   }
 
   .hero-logo-circle {
-    width: 65px; /* Compact logo layout size */
+    width: 65px;
     height: 65px;
     padding: 5px;
   }
 
   .hero-league-desc {
-    max-width: 100%; /* Lets description wrap using all horizontal column space safely */
+    max-width: 100%;
     font-size: 13px;
   }
 
   .hero-stats-display {
     width: 100%;
-    justify-content: space-between; /* Spreads the stats block elements across the bottom container area */
-    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Adds a sharp divider accent border */
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-top: 20px;
     gap: 10px;
   }
@@ -1895,67 +1821,63 @@ body {
   .stat-num {
     font-size: 32px;
   }
-  /* FIX CROWDED MOBILE DATE & HEADER */
+
   .content-header {
-    flex-direction: column; /* Stacks LATEST NEWS above the date */
-    align-items: flex-start; /* Aligns them both to the left edge */
-    gap: 8px; /* Adds clean breathing room between them */
-    margin-bottom: 24px; /* Gives space before the hero card starts */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
   }
   .content-header h1 {
-    font-size: 32px; /* Makes the main title punchy but compact */
+    font-size: 32px;
     line-height: 1;
   }
   .date-display {
-    font-size: 12px; /* Reduces the font size so it fits easily on any phone screen */
-    letter-spacing: 0.5px; /* Keeps it legible */
-    color: #888e88; /* Slightly softens the color to look less aggressive */
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #888e88;
   }
   .teams-hero {
-    flex-direction: column; /* Stacks text/crest content above the stats numbers row */
-    align-items: flex-start; /* Aligns everything perfectly along the left margin */
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
-    gap: 30px; /* Adds elegant breathing room between sections */
+    gap: 30px;
     padding: 24px;
     background-position: center 25%;
   }
 
-  /* Moves your "LIVE NOW" badge into a standard layout alignment stream */
   .teams-hero .popular-badge {
     position: static;
     display: inline-block;
     margin-bottom: 12px;
   }
 
-  /* Spreads the individual team data blocks across the bottom available width */
   .teams-hero .hero-stats-display {
     width: 100%;
     justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Sleek translucent accent divider */
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-top: 20px;
     gap: 10px;
   }
   .players-hero {
-    flex-direction: column; /* Stacks description text over the stats block row */
-    align-items: flex-start; /* Aligns everything smoothly to the left margin */
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
-    gap: 30px; /* Adds elegant breathing room between sections */
+    gap: 30px;
     padding: 24px;
     background-position: center 42%;
   }
 
-  /* Moves the absolute "FOOTBALL LEGEND" badge back into the natural layout flow */
   .players-hero .popular-badge {
     position: static;
     display: inline-block;
     margin-bottom: 12px;
   }
 
-  /* Spreads the stats blocks neatly across the full screen width on mobile devices */
   .players-hero .hero-stats-display {
     width: 100%;
     justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Sleek translucent accent line */
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-top: 20px;
     gap: 10px;
   }
@@ -1985,11 +1907,10 @@ body {
 
   .match-center-score {
     font-size: 1rem;
-    min-width: 40px; /* Keeps vs or score text from wrapping ugly */
+    min-width: 40px;
     text-align: center;
   }
 
-  /* Scale down the interior of your Top Scoring Teams sidebar panel */
   .scoring-full-card {
     padding: 16px;
   }
@@ -2006,67 +1927,67 @@ body {
     width: 18px;
     height: 18px;
   }
-  /* 1. Stack or wrap the league navigation buttons neatly */
+
   .league-tabs-nav {
-    flex-wrap: wrap; /* Allows buttons to drop to a new line instead of overflowing */
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
   }
 
   .league-tab-link {
-    padding: 8px 14px; /* Makes tabs slightly smaller and easier to tap */
+    padding: 8px 14px;
     font-size: 0.8rem;
-    flex-grow: 1;      /* Makes tabs expand evenly to fill the row width */
+    flex-grow: 1;
     text-align: center;
   }
 
-  /* 2. Shrink the table structure to guarantee a perfect fit */
   .standings-container-card {
-    padding: 4px;      /* Frees up side margins inside the card container */
+    padding: 4px;
     border-radius: 12px;
   }
 
-  .standings-table th, 
+  .standings-table th,
   .standings-table td {
-    padding: 10px 6px; /* Tighter padding inside cells */
-    font-size: 0.8rem; /* Smaller typography overall */
+    padding: 10px 6px;
+    font-size: 0.8rem;
   }
 
   .table-club-badge {
-    width: 18px;       /* Scale down team badges */
+    width: 18px;
     height: 18px;
   }
 
   .table-team-name {
     font-size: 0.8rem;
-    max-width: 90px;   /* Prevents long team names from stretching the screen */
+    max-width: 90px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Adds "..." if a name is too long (e.g., Brighton & Hove...) */
+    text-overflow: ellipsis;
   }
 
-  /* 3. Hide non-essential columns to make room on narrow screens */
-  /* This targets Wins (W), Draws (D), Losses (L), and Goal Difference (GD) columns */
-  .standings-table th:nth-child(4), .standings-table td:nth-child(4), /* W */
-  .standings-table th:nth-child(5), .standings-table td:nth-child(5), /* D */
-  .standings-table th:nth-child(6), .standings-table td:nth-child(6), /* L */
-  .standings-table th:nth-child(9), .standings-table td:nth-child(9)  /* Form */ {
+  .standings-table th:nth-child(4),
+  .standings-table td:nth-child(4),
+  .standings-table th:nth-child(5),
+  .standings-table td:nth-child(5),
+  .standings-table th:nth-child(6),
+  .standings-table td:nth-child(6),
+  .standings-table th:nth-child(9),
+  .standings-table td:nth-child(9) {
     display: none;
   }
 
-  /* 4. Compact the Form Badges so they still fit next to Points */
   .col-form {
-    width: 95px;       /* Shrink the column width constraint */
+    width: 95px;
   }
 
   .form-wrapper {
-    gap: 3px;          /* Tighter spacing between circles */
+    gap: 3px;
   }
 
   .badge-f {
-    width: 15px;       /* Scale down form circle sizes */
+    width: 15px;
     height: 15px;
-    font-size: 0.6rem; /* Tiny text inside form badges */
+    font-size: 0.6rem;
   }
 }
 
@@ -2087,23 +2008,18 @@ body {
   .content-wrapper {
     margin-left: 50px;
   }
-  .nav-icon{
+  .nav-icon {
     width: 20px;
   }
   .nav-item {
     padding: 8px 10px;
   }
-  
-
-
-  
 }
 
-/* Make sure this is sitting at the bottom of your CSS file */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(8px); /* Subtle lift up on load */
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
