@@ -2080,6 +2080,24 @@ body {
     width: 270px;
   }
 }
+@media (max-width: 400px) {
+  .sidebar {
+    width: 60px;
+  }
+  .content-wrapper {
+    margin-left: 50px;
+  }
+  .nav-icon{
+    width: 20px;
+  }
+  .nav-item {
+    padding: 8px 10px;
+  }
+  
+
+
+  
+}
 
 /* Make sure this is sitting at the bottom of your CSS file */
 @keyframes fadeIn {
